@@ -1,0 +1,10 @@
+.main-title-image {
+    width: clamp(50vmin, 500px, 90vw);
+    height: clamp(50vmin, 500px, 90vw);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}

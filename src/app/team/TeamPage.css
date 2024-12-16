@@ -1,0 +1,50 @@
+/* src/app/team/TeamPage.css */
+
+.team-page {
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    height: 100vh; /*Adjust height to account for navbar */
+    width: 75vw;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.scrollable-container {
+    width: 100%;
+    max-height: 100%; /* Allow it to take full height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Change to 3 columns */
+    gap: 20px; /* Space between boxes */
+    padding: 2.5%;
+}
+
+.team-section {
+    background-color: rgba(0, 0, 2, 0.2); /* Light background for sections */
+    border: 1px solid white; /* Border for sections */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.team-section:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+h1 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
