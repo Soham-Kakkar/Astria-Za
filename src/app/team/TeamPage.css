@@ -1,13 +1,7 @@
-/* src/app/team/TeamPage.css */
-
 .team-page {
-    font-family: 'Orbitron', sans-serif;
-    color: white;
-    height: 100vh; /*Adjust height to account for navbar */
+    height: 100%;
     width: 75vw;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
+    font-family: 'Orbitron', sans-serif;
 }
 
 .scrollable-container {
@@ -31,6 +25,10 @@
 
 .team-section:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+@media (hover: none) {
+    .team-section {transform: initial;}
 }
 
 h1 {

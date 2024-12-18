@@ -2,9 +2,6 @@ import Link from 'next/link';
 import './Navbar.css';
 import SignInBtn from '../SignInBtn';
 
-const handleLogout = () => { };
-const handleCredentialResponse = () => {};
-
 export default function Navbar() {
   return (
     <nav className="navbar" role='navbar'>
