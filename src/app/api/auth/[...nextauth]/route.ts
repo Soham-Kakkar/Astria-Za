@@ -13,7 +13,7 @@ const handler = NextAuth({
   },
   secret: process.env.NEXTAUTH_SECRET, // Required for JWT
   callbacks: {
-    async signIn({ user, account, profile }) {
+    async signIn({ user }) {
       // Check if the user's email ends with .iitjammu.ac.in
       if (user.email && user.email.endsWith('@iitjammu.ac.in')) {
         return true; // Allow sign in

@@ -5,8 +5,8 @@ import SignInBtn from '../SignInBtn';
 export default function Navbar() {
   return (
     <nav className="navbar" role='navbar'>
-      <Link href='/'><div className="logo">ASTRIA-ZA</div></Link>
       <div className="nav">
+        <Link href='/'><div className="logo">ASTRIA-ZA</div></Link>
         <ul className="nav-links">
           <li><Link href="/">Home</Link></li>
           <li><Link href="/about">About</Link></li>

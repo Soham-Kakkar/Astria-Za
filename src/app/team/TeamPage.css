@@ -9,9 +9,10 @@
     max-height: 100%; /* Allow it to take full height */
     overflow-y: auto; /* Enable vertical scrolling */
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Change to 3 columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px; /* Space between boxes */
     padding: 2.5%;
+    padding-bottom: 5%;
 }
 
 .team-section {

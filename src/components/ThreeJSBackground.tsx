@@ -13,7 +13,23 @@ const ThreeBackground: React.FC = () => {
         const container = containerRef.current;
 
         if (!container) return; // Ensure the container is available
+        
+        const isLowEndDevice = () => {
+            const cores = navigator.hardwareConcurrency || 4; // Default to 4 if not available
+            const memory = navigator.deviceMemory || 4; // Default to 4GB if not available
 
+            // Example thresholds
+            const isLowCores = cores < 4; // Low core count threshold
+            const isLowMemory = memory < 4; // Low memory threshold (less than 4GB)
+
+            // Return true if the device is low-end based on cores, memory, or if it's a mobile device
+            return isLowCores || isLowMemory;
+        };
+
+        if (isLowEndDevice()) {
+            console.warn('Device may not support rendering this background due to performance limitations.');
+            return; // Skip rendering
+        }
         // Create the scene, camera, and renderer
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
@@ -93,6 +109,7 @@ const ThreeBackground: React.FC = () => {
                 height: '100%',
                 overflow: 'hidden',
                 zIndex: -10,
+                backgroundImage: '../../public/resources/bg-img.png'
             }}
         />
     );
