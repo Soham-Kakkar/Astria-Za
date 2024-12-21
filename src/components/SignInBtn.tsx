@@ -27,7 +27,7 @@ export default function ProfileViewer() {
             {showProfile ? "Hide Profile" : "View Profile"}
           </button>
           {showProfile && (
-            <div style={{position: 'absolute', right: '0', zIndex: '100', borderRadius: '8px', border: '1px solid white' ,backgroundColor: 'rgba(0, 0, 2, 0.2)', padding: '20px'}}>
+            <div style={{position: 'absolute', right: '0', zIndex: '100', borderRadius: '8px', border: '1px solid white', backgroundColor: 'rgba(0, 0, 2, 0.9)', padding: '20px', margin: '5px'}}>
               <p style={{fontSize: '1rem'}}>Name: {session.user?.name}</p>
               <p style={{fontSize: '1rem'}}>Email: {session.user?.email}</p>
               <button onClick={handleSignOut}>Sign Out</button>

@@ -60,11 +60,6 @@
     left: 0; /* Align to the left */
 }
 
-.nav-links a.active::after {
-    width: 100%; /* Expand to full width on hover */
-    left: 0; /* Align to the left */
-}
-
 .sign-in button {
     border: none;
     font-family: 'Orbitron';

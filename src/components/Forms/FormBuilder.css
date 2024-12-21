@@ -1,0 +1,220 @@
+.form-builder-page {
+    height: 100%;
+    width: 85vw;
+    font-family: 'Orbitron', sans-serif;
+    overflow-y: auto;
+}
+
+.form-builder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "sidebar form-editor preview";
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 2, 0.2);
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+    .form-builder {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "sidebar"
+            "form-editor"
+            "preview";
+    }
+}
+
+.add-fields {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.form-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+input {
+    flex-grow: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+
+.form-editor {
+    grid-area: form-editor;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 2, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+.field-editor {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.question-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.question-container input {
+    flex-grow: 1;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.options-container input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+
+.remove-field, .add-option {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: white;
+    border: 1px solid red;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Orbitron', Arial, sans-serif;
+}
+
+.add-option {
+    border: 1px solid skyblue;
+    background-color: rgba(0, 255, 255, 0.1);
+}
+
+.remove-field:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+.add-option:hover {
+    background-color: rgba(0, 255, 255, 0.2);
+}
+.form-view {
+    grid-area: preview;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: rgba(0, 0, 2, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    max-height: 500px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.form-question {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.form-question label {
+    color: white;
+    font-size: 1rem;
+}
+
+.form-question input[type="text"],
+.form-question input[type="radio"],
+.form-question input[type="checkbox"] {
+    margin-top: 5px;
+}
+
+.form-builder button[type="submit"] {
+    background-color: rgba(0, 255, 0, 0.1);
+    color: white;
+    border: 1px solid green;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Orbitron', Arial, sans-serif;
+    margin-top: 15px;
+}
+
+.form-builder button[type="submit"]:hover {
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+.form-builder button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .form-builder {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .question-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
