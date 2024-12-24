@@ -22,7 +22,7 @@ export default function ProfileViewer() {
   return (
     <div>
       {session ? (
-        <div>
+        <>
           <button onClick={toggleProfile}>
             {showProfile ? "Hide Profile" : "View Profile"}
           </button>
@@ -33,7 +33,7 @@ export default function ProfileViewer() {
               <button onClick={handleSignOut}>Sign Out</button>
             </div>
           )}
-        </div>
+        </>
       ) : (
         <button onClick={handleSignIn}>Sign In</button>
       )}

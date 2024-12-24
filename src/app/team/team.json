@@ -1,0 +1,30 @@
+{
+    "Senior Advisor": [
+        { "name": "Vedika Aggarwal", "id": "2022UCH0072", "image": "/resources/team/vedika.png" }
+    ],
+    "Club Coordinator": [
+        { "name": "Sunny Kumar", "id": "2023UXXYYYY", "image": "/resources/team/sunny.png" }
+    ],
+    "Event Management Team": [
+        { "name": "Shlok Tiwari", "id": "2023UCE0067", "image": "/resources/team/shlok.png" },
+        { "name": "Anirudh Garg", "id": "2023UCH0005", "image": "/resources/team/anirudh.png" }
+    ],
+    "Sponsorship & Outreach Team": [
+        { "name": "Yuvraj Singh", "id": "2023UEE0160", "image": "/resources/team/yuvraj.png" }
+    ],
+    "Web Dev Team": [
+        { "name": "Sujal Kapoor", "id": "2023UEE0154", "image": "/resources/team/sujal.png" }
+    ],
+    "Social Media Team": [
+        { "name": "Sachin Kumar Sah", "id": "2023UMA0234", "image": "/resources/team/sachin.png" }
+    ],
+    "Brain Ticklers Team": [
+        { "name": "Arjun Verma", "id": "2023UMA0204", "image": "/resources/team/arjun.png" }
+    ],
+    "Inventory Team": [
+        { "name": "Somil Pandita", "id": "2023UEE0153", "image": "/resources/team/somil.png" }
+    ],
+    "Design Team": [
+        { "name": "Jay Mangal Pandey", "id": "2023UMA0216", "image": "/resources/team/jay.png" }
+    ]
+}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import FieldEditor from "./FieldEditor";
-import FormPreview from "./FormView";
+import FormView from "./FormView";
 import { FormField } from "./types";
 
 const FormBuilder = () => {
@@ -31,7 +31,8 @@ const FormBuilder = () => {
     try {
       const formattedFields = fields.map(field => {
         // Create a formatted object for each field
-        const fieldData = {
+        const fieldData: FormField = {
+          id: field.id,
           label: field.label,
           type: field.type,
           options: field.options
@@ -62,6 +63,7 @@ const FormBuilder = () => {
       }
     } catch (error) {
       alert("An error occurred while saving the form.");
+      console.log((error as Error).message);
     } finally {
       setIsSaving(false);
     }
@@ -97,8 +99,10 @@ const FormBuilder = () => {
           />
         ))}
       </div>
-        <FormPreview fields={fields} preview={true} />
 
+      <div className="form-view">
+        <FormView title={formName} fields={fields} preview={true} />
+      </div>
         <button
           onClick={handleSaveForm}
           className={`${isSaving ? "disabled" : ""}`}

@@ -1,6 +1,6 @@
 :root {
   --background-color: #000000;
-  --background-image: url('../../public/resources/bg-img.png');
+  --background-image: url('../components//ThreeJSBackground/bg-img.png');
   --foreground: #ffffff;
 }
 

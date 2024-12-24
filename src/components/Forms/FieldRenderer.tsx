@@ -12,7 +12,7 @@ const FieldRenderer: React.FC<Props> = ({ field, preview = false }) => {
       return (
         <div className="form-question">
           <label>
-            {field.label}
+            <div>{field.label}</div>
             <input type="text" id={field.id} name={field.id} {...(preview) && {disabled: true} } />
           </label>
         </div>

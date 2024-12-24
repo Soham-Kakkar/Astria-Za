@@ -1,14 +1,14 @@
 import { NextResponse } from "next/server";
 
 export async function POST(req: Request) {
-  const { formData } = await req.json(); // Use req.json() to parse the request body
+  const { formResponses } = await req.json(); // Use req.json() to parse the request body
 
   try {
-    // Convert formData to URL-encoded format
+    // Convert formResponses to URL-encoded format
     const urlEncodedData = new URLSearchParams();
-    urlEncodedData.append("event_id", formData.eventId);
-    urlEncodedData.append("metadata", "true")
-    urlEncodedData.append("fields[data]", JSON.stringify(formData.fields));
+    urlEncodedData.append("event_id", formResponses.eventId);
+    urlEncodedData.append("metadata", "false")
+    urlEncodedData.append("fields[data]", JSON.stringify(formResponses.fields));
 
     const response = await fetch(
       `https://script.google.com/macros/s/${process.env.GOOGLE_APPS_SCRIPT_ID}/exec`,

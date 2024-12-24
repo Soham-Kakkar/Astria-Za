@@ -1,0 +1,47 @@
+{
+    "National Space Day" : [
+        {
+            "date": "2022-06-03",
+            "typeOfEvent": "Host",
+            "natureOfEvent": "Intra",
+            "objective": "The National Space Day event was organized by the Astronomy Club of IIT Jammu to celebrate India's remarkable achievement with Chandrayaan-2's historic lunar landing, inspiring interest in space science and exploration.",
+            "description": "The event featured a keynote talk by Dr. S. Pandian, (former Director of SDSC SHAR ISRO), who shared insights on India's space missions and future prospects. A quiz competition followed, engaging participants with questions on astronomy and space science, fostering curiosity and knowledge among students."
+        }
+    ],
+    "Star-gazing": [
+        {
+            "date": "2024-09-21",
+            "typeOfEvent": "Host",
+            "natureOfEvent": "Intra",
+            "objective": "To offer students a captivating and educational stargazing experience with our telescope.",
+            "description": "The session involved a guided tour of the night sky using a telescope, where participants observed prominent celestial bodies such as the moon, stars, etc. Club members shared insights on star identification, telescope handling, and the science behind each observation, making it an enriching experience for both astronomy enthusiasts and newcomers."
+        }
+    ],
+    "Night of Planets (Saturn And Jupiter Sighting)": [
+        {
+            "date": "2024-10-11",
+            "typeOfEvent": "Host",
+            "natureOfEvent": "Intra",
+            "objective": "To offer students an opportunity to observe and learn about specific planets and their unique features.",
+            "description": "The session offered a captivating stargazing experience, featuring the sighting of Jupiter and Saturn through telescopes. Participants enjoyed breathtaking views of these planets, deepening their interest in astronomy."
+        }
+    ],
+    "Movie Night": [
+        {
+            "date": "2024-11-09",
+            "typeOfEvent": "Host",
+            "natureOfEvent": "Intra",
+            "objective": "To engage students in the exploration of astronomy through a captivating cinematic experience.",
+            "description": "The Movie Night featured the screening of the sci-fi masterpiece Prometheus, centered around themes of astronomy and humanity's quest for its origins among the stars. The film captivated the audience with its thrilling narrative and stunning visuals, sparking curiosity about space exploration and alien worlds, while offering an exciting blend of entertainment and scientific intrigue."
+        }
+    ],
+    "Water Rocket Workshop & Origami Demonstration": [
+        {
+            "date": "2024-11-24",
+            "typeOfEvent": "Host",
+            "natureOfEvent": "Intra",
+            "objective": "Participants will learn about the principles of aerodynamics and also construction and optimization of rockets for better stability and height, connecting the mechanics of propulsion to the technology used in real-life space exploration.",
+            "description": "The event began with a hands-on session on origami, where participants explored the art of precision and creativity by folding intricate designs. Following this, a theory session on water rockets introduced participants to the principles of aerodynamics and propulsion, culminating in live demonstrations of rocket launches. The workshop blended creativity with science, inspiring curiosity and innovation among all who attended."
+        }
+    ]
+}

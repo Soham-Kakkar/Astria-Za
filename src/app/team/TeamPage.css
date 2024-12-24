@@ -8,20 +8,35 @@
     width: 100%;
     max-height: 100%; /* Allow it to take full height */
     overflow-y: auto; /* Enable vertical scrolling */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px; /* Space between boxes */
+    display: flex; /* Change to flexbox */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center; /* Center items */
+    /*gap: 20px; /* Space between boxes */
     padding: 2.5%;
     padding-bottom: 5%;
 }
 
 .team-section {
+    flex: 1 1 40%; /* Adjust width as needed */
+    max-width: 600px; /* Set a max width for each section */
+    margin: 10px; /* Add margin for spacing */
     background-color: rgba(0, 0, 2, 0.2); /* Light background for sections */
     border: 1px solid white; /* Border for sections */
     border-radius: 8px; /* Rounded corners */
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.team-section span:has(img) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team-section img {
+    margin-inline-end: 1rem;
+    border-radius: 50%;
 }
 
 .team-section:hover {

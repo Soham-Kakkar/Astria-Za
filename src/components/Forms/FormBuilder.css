@@ -15,7 +15,7 @@
     max-width: 1500px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(0, 0, 2, 0.2);
+    background-color: rgba(0, 0, 2, 0.5);
     border: 1px solid white;
     border-radius: 8px;
 }
@@ -180,10 +180,15 @@ input {
     font-size: 1rem;
 }
 
-.form-question input[type="text"],
+.form-question input[type="text"] {
+    margin-top: 5px;
+    width: 100%;
+}
+
 .form-question input[type="radio"],
 .form-question input[type="checkbox"] {
     margin-top: 5px;
+    margin-right: 1rem;
 }
 
 .form-builder button[type="submit"] {

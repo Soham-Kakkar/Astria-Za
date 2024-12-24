@@ -1,0 +1,45 @@
+.easter-egg {
+  position: fixed; /* Fixed position to stay at the bottom */
+  bottom: 0;
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  color: white;
+  z-index: 10;
+  transition: all 0.5s ease; /* Smooth transition for height */
+  height: 1rem; /* Default height when not hovered */
+  width: 5rem; 
+  overflow: hidden; /* Hide overflow */
+  overflow-y: auto;
+  max-width: 95vw;
+}
+.easter-egg-hidden {
+  margin-top: 1rem;
+  visibility: hidden;
+  /* line-height: 2rem; */
+  letter-spacing: 0.1rem;
+}
+
+@keyframes showtext {
+  0% {visibility: hidden; scale: 0.1;}
+  50% {visibility: hidden; scale: 0.2;}
+  75% {visibility: hidden; scale: 0.3;}
+  100% {visibility: visible; scale: 1;}
+}
+
+.easter-egg:hover {
+  height: 15rem;
+  width: 40rem;
+  bottom: 0.1rem;
+  border-radius: 6px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.easter-egg:hover .easter-egg-hidden {
+  animation: showtext 0.5s ease;
+  line-height: 2.5rem;
+  visibility: visible;
+}
+
+.easter-egg:hover .easter-egg-visible {
+  visibility: hidden;
+}

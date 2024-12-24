@@ -1,8 +1,9 @@
 import './globals.css';
 import Navbar from '../components/Navbar/Navbar';
-import ThreeJSBackground from '../components/ThreeJSBackground';
+import ThreeJSBackground from '../components/ThreeJSBackground/ThreeJSBackground';
 import SessionProvider from "../components/SessionProvider";
 import { getServerSession } from "next-auth";
+import EasterEggMagic from "@/components/EasterEggMagic"
 
 export const metadata = {
   title: "Astria-Za - IIT Jammu",
@@ -17,7 +18,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <SessionProvider session={session}>
         <ThreeJSBackground />
         <Navbar />
-        <main>{children}</main>
+        <main>{children}</main>        
+        <EasterEggMagic />
       </SessionProvider>
       </body>
     </html>
