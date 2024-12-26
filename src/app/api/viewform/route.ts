@@ -17,10 +17,9 @@ export async function GET(req: Request) {
         headers: { "Content-Type": "application/json" },
       }
     );
-
+    console.log(response);
     if (response.ok) {
       const data = await response.json(); // Assuming the response is JSON
-      console.log(data);
       return NextResponse.json(data); // Return the actual data from the API
     } else {
       const errorText = await response.text();

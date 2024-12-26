@@ -1,3 +1,4 @@
+/* src/app/HomePage.css */
 .home-page {
     height: 100vh;
     width: 75vw;
@@ -6,6 +7,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .main-title-image {
@@ -19,4 +22,79 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
+}
+
+
+/* New Mobile-Friendly Styles */
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .quick-links {
+        display: none;
+    }
+}
+.quick-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 150px;
+}
+
+.quick-link:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.link-text {
+    font-size: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .home-page {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .main-title-image {
+        max-width: 80vmin;
+        max-height: 80vmin;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .quick-links {
+        gap: 15px;
+    }
+
+    .quick-link {
+        width: 120px;
+        padding: 10px;
+    }
+
+    .link-icon {
+        font-size: 1.5rem;
+    }
+
+    .link-text {
+        font-size: 0.9rem;
+    }
 }

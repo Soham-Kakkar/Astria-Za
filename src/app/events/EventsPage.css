@@ -1,0 +1,120 @@
+/* src/app/events/EventsPage.css */
+.events-page {
+    height: 100%;
+    width: 75vw;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 8px;
+    padding: 20px;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    margin: 10px;
+}
+
+.events-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.events-title {
+    margin-bottom: 10px;
+    letter-spacing: 0.1rem;
+}
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 5rem;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.event-section {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.event-type {
+    color: #007BFF;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.event-name {
+    margin-bottom: 10px;
+}
+
+.event-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.event-date {
+ font-size: smaller;
+}
+
+.event-card {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card:hover {
+    transform: scale(1.01);
+}
+
+.event-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+.event-date {
+    color: white;
+    font-weight: bold;
+}
+
+.event-tag {
+    background-color: rgba(0, 123, 255, 0.2);
+    color: #007BFF;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.event-card-content {
+    flex-grow: 1;
+}
+
+.event-objective {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.event-description {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .events-page {
+        width: 95%;
+        padding: 10px;
+    }
+}

@@ -1,7 +1,6 @@
 .team-page {
     height: 100%;
     width: 75vw;
-    font-family: 'Orbitron', sans-serif;
 }
 
 .scrollable-container {
@@ -14,11 +13,13 @@
     /*gap: 20px; /* Space between boxes */
     padding: 2.5%;
     padding-bottom: 5%;
+    padding-bottom: 5rem;
 }
 
 .team-section {
     flex: 1 1 40%; /* Adjust width as needed */
     max-width: 600px; /* Set a max width for each section */
+    min-width: 350px;
     margin: 10px; /* Add margin for spacing */
     background-color: rgba(0, 0, 2, 0.2); /* Light background for sections */
     border: 1px solid white; /* Border for sections */
@@ -59,6 +60,15 @@ h2 {
 p {
     margin-top: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .team-section {
+        min-width: 200px;
+    }
+    p {
+        flex-direction: column;
+    }
 }

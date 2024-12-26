@@ -11,7 +11,7 @@ export default function Navbar() {
           <li><Link href="/">Home</Link></li>
           <li><Link href="/about">About</Link></li>
           <li><Link href="/team">Team</Link></li>
-          <li><Link href="/past-events">Events</Link></li>
+          <li><Link href="/events">Events</Link></li>
         </ul>
       </div>
       <div className="sign-in">
