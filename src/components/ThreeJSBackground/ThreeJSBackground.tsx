@@ -1,6 +1,6 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
-import * as THREE from 'three';
+import * as THREE from './THREE';
 
 const ThreeBackground: React.FC = () => {
     const containerRef = useRef<HTMLDivElement | null>(null);
