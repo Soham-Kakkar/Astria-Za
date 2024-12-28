@@ -39,12 +39,11 @@ export default function FormPage() {
         console.log(error);
       } finally {
         setLoading(false);
-        console.log("done");
       }
     };
 
-    id && fetchFormFields();
-  }, [id]);
+    if(id) fetchFormFields();
+  }, [id, error]);
 
   if (loading) return <div>Loading...</div>
 
@@ -58,7 +57,7 @@ export default function FormPage() {
       <div className="401-box" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
         <h1 className="401" style={{ paddingRight: '1rem' }}>401</h1>
         <h2 className="401-text" style={{ paddingLeft: '1rem', letterSpacing: '0.15rem', borderLeft: '1px solid white' }}>
-          Well, you'll need to login to fill the form.
+          Oops! Make sure you're logged in and didn't play around with the link.
         </h2>
       </div>
     </>

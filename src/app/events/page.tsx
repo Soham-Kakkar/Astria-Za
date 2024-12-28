@@ -2,6 +2,16 @@
 import './EventsPage.css';
 import eventData from './events.json';
 
+interface Event {
+    eventName: string; 
+    date: string; 
+    typeOfEvent: string; 
+    natureOfEvent: string; 
+    objective: string; 
+    description: string;
+    link?: string;
+}
+
 export default function EventsPage() {
     function dateToSortNumber(dateString: string): number {
         const [year, month, day] = dateString.split('-').map(Number);
@@ -12,15 +22,15 @@ export default function EventsPage() {
     const currentDateString = currentDate.toISOString().split('T')[0]; // Get current date in YYYY-MM-DD format
 
     // Separate events into past and upcoming
-    const pastEvents: any[] = [];
-    const upcomingEvents: any[] = [];
+    const pastEvents: Event[] = [];
+    const upcomingEvents: Event[] = [];
 
-    Object.entries(eventData).forEach(([eventType, events]) => {
+    Object.entries(eventData).forEach(([eventName, events]) => {
         events.forEach(event => {
             if (dateToSortNumber(event.date) < dateToSortNumber(currentDateString)) {
-                pastEvents.push({ ...event, eventType });
+                pastEvents.push({ ...event, eventName });
             } else {
-                upcomingEvents.push({ ...event, eventType });
+                upcomingEvents.push({ ...event, eventName });
             }
         });
     });
@@ -41,27 +51,32 @@ export default function EventsPage() {
                     <div className="event-cards">
                         {upcomingEvents.map((event, index) => (
                             <div
-                            key={index}
-                            className="event-card"
-                            data-event-type={event.typeOfEvent}
-                        >
-                            <h3 className="event-name">{event.eventType}</h3>
-                            <div className="event-card-header">
-                                <span className="event-date">
-                                    {new Date(event.date).toLocaleDateString('en-US', {
-                                        year: 'numeric',
-                                        month: 'long',
-                                        day: 'numeric'
-                                    })}
-                                </span>
-                                <span className="event-tag">
-                                    {event.typeOfEvent}
-                                </span>
+                                key={index}
+                                className="event-card"
+                                data-event-type={event.typeOfEvent}
+                            >
+                                <h3 className="event-name">{event.eventName}</h3>
+                                <div className="event-card-header">
+                                    <span className="event-date">
+                                        {new Date(event.date).toLocaleDateString('en-US', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric'
+                                        })}
+                                    </span>
+                                    <span className="event-tag">
+                                        {event.typeOfEvent}
+                                    </span>
+                                </div>
+                                <div className="event-card-content">
+                                    <p className="event-description">{event.objective}</p>
+                                </div>
+                                {event.link && (
+                                        <a href={event.link} target="_blank" rel="noopener noreferrer" className="event-link">
+                                            <button className="link-button">View Event Link</button>
+                                        </a>
+                                    )}
                             </div>
-                            <div className="event-card-content">
-                                <p className="event-description">{event.description}</p>
-                            </div>
-                        </div>
                         ))}
                         {upcomingEvents.length === 0 && <p>Waiting for the next event!</p>}
                     </div>
@@ -77,7 +92,7 @@ export default function EventsPage() {
                                 className="event-card"
                                 data-event-type={event.typeOfEvent}
                             >
-                                <h3 className="event-name">{event.eventType}</h3>
+                                <h3 className="event-name">{event.eventName}</h3>
                                 <div className="event-card-header">
                                     <span className="event-date">
                                         {new Date(event.date).toLocaleDateString('en-US', {

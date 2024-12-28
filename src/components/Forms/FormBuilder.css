@@ -212,6 +212,54 @@ button[type="submit"] {
     cursor: not-allowed;
 }
 
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.popup-content {
+    background: #303030;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+    margin: 0 0 10px;
+}
+
+.popup-content p {
+    margin: 10px 0;
+}
+
+.popup-content a {
+    color: rgb(0, 179, 255);
+    text-decoration: underline;
+}
+
+.popup-content button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #005bb5;
+}
+
 @media (max-width: 600px) {
     .form-builder {
         width: 95%;

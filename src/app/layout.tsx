@@ -1,5 +1,6 @@
 import './globals.css';
 import Navbar from '../components/Navbar/Navbar';
+import NavbarMobile from '../components/Navbar/NavbarMobile';
 import ThreeJSBackground from '../components/ThreeJSBackground/ThreeJSBackground';
 import SessionProvider from "../components/SessionProvider";
 import { getServerSession } from "next-auth";
@@ -18,6 +19,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <SessionProvider session={session}>
         <ThreeJSBackground />
         <Navbar />
+        <NavbarMobile />
         <main>{children}</main>        
         <EasterEggMagic />
       </SessionProvider>

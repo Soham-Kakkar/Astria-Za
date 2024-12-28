@@ -58,3 +58,16 @@ main {
   text-align: center;
   padding: 20px;
 }
+
+nav.navbar-mobile {
+  display: none;
+}
+
+@media (max-width: 995px) {
+  nav.navbar-mobile {
+    display: flex;
+  }
+  nav.navbar-pc {
+    display: none;
+  }
+}

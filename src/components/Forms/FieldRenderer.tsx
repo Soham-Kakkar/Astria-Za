@@ -3,17 +3,22 @@ import { FormField } from "./types";
 
 interface Props {
   field: FormField;
-  preview?: boolean
+  preview?: boolean;
+  onValueChange: (label: string, value: any) => void;
 }
 
-const FieldRenderer: React.FC<Props> = ({ field, preview = false }) => {
+const FieldRenderer: React.FC<Props> = ({ field, preview = false , onValueChange }) => {
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    onValueChange(field.label, event.target.value); // Call the onValueChange function
+  };
+
   switch (field.type) {
     case "text":
       return (
         <div className="form-question">
           <label>
             <div>{field.label}</div>
-            <input type="text" id={field.id} name={field.id} {...(preview) && {disabled: true} } />
+            <input type="text" id={field.id} name={field.id} {...(preview) && {disabled: true} } onChange={handleChange}/>
           </label>
         </div>
       );
@@ -24,7 +29,7 @@ const FieldRenderer: React.FC<Props> = ({ field, preview = false }) => {
             {field.label}
             {field.options?.map((option, index) => (
               <div key={index}>
-                <input type="radio" name={field.id} value={option} {...(preview) && {disabled: true} }/>
+                <input type="radio" name={field.id} value={option} {...(preview) && {disabled: true} } onChange={handleChange}/>
                 <span>{option}</span>
               </div>
             ))}
@@ -38,7 +43,7 @@ const FieldRenderer: React.FC<Props> = ({ field, preview = false }) => {
             {field.label}
             {field.options?.map((option, index) => (
               <div key={index}>
-                <input type="checkbox" name={field.id} value={option} {...(preview) && {disabled: true}}/>
+                <input type="checkbox" name={field.id} value={option} {...(preview) && {disabled: true}} onChange={handleChange}/>
                 <span>{option}</span>
               </div>
             ))}

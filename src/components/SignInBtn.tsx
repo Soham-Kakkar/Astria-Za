@@ -20,7 +20,7 @@ export default function ProfileViewer() {
   };
 
   return (
-    <div>
+    <>
       {session ? (
         <>
           <button onClick={toggleProfile}>
@@ -37,6 +37,6 @@ export default function ProfileViewer() {
       ) : (
         <button onClick={handleSignIn}>Sign In</button>
       )}
-    </div>
+    </>
   );
 }

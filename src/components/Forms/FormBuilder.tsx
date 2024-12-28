@@ -7,6 +7,11 @@ const FormBuilder = () => {
   const [fields, setFields] = useState<FormField[]>([]);
   const [formName, setFormName] = useState<string>("");
   const [isSaving, setIsSaving] = useState<boolean>(false);
+  const [showPopup, setShowPopup] = useState<boolean>(false);
+  const [formLink, setFormLink] = useState<string>("");
+  const [saveError, setSaveError] = useState<boolean>(false);
+  const [copiedLink, setCopiedLink] = useState<boolean>(false);
+  const siteURL = process.env.NEXT_PUBLIC_SITE_NAME;
 
   const addField = (type: FormField["type"]) => {
     setFields([
@@ -27,7 +32,7 @@ const FormBuilder = () => {
 
   const handleSaveForm = async () => {
     setIsSaving(true);
-  
+
     try {
       const formattedFields = fields.map(field => {
         // Create a formatted object for each field
@@ -37,10 +42,11 @@ const FormBuilder = () => {
           type: field.type,
           options: field.options
         };
-  
+
         return fieldData; // Return the formatted field data
       });
-  
+
+      const timestamp = Date.now().toString();
       const response = await fetch("/api/saveform", {
         method: "POST",
         headers: {
@@ -48,25 +54,42 @@ const FormBuilder = () => {
         },
         body: JSON.stringify({
           formData: {
-            eventId: `${formName}_${Date.now().toString()}`, // This is the form name
+            eventId: `${formName}_${timestamp}`, // This is the form name
             fields: formattedFields, // This should be the array of formatted fields
           },
         }),
       });
-      console.log(formattedFields);
       const result = await response.json();
-  
+
       if (response.ok) {
-        alert("Form saved successfully!");
+        setFormLink(`${siteURL}/form?id=${formName}_${timestamp}`);
       } else {
-        alert(result.error || "Failed to save form.");
+        setSaveError(true);
+        console.error(result.error || "An error occurred while saving the form.");
       }
     } catch (error) {
-      alert("An error occurred while saving the form.");
-      console.log((error as Error).message);
+      setSaveError(true);
+      console.error((error as Error).message);
     } finally {
       setIsSaving(false);
+      setShowPopup(true);
     }
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
+    setCopiedLink(false);
+  };
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(formLink)
+        .then(() => {
+            console.log(`copied link: ${formLink}`);
+            setCopiedLink(true);
+        })
+        .catch(err => {
+            console.error("Failed to copy: ", err);
+        });
   };
 
   return (
@@ -103,14 +126,30 @@ const FormBuilder = () => {
       <div className="form-view">
         <FormView title={formName} fields={fields} preview={true} />
       </div>
-        <button
-          onClick={handleSaveForm}
-          className={`${isSaving ? "disabled" : ""}`}
-          disabled={isSaving}
-          type="submit"
-        >
-          {isSaving ? "Saving..." : "Save Form"}
-        </button>
+      <button
+        onClick={handleSaveForm}
+        className={`${isSaving ? "disabled" : ""}`}
+        disabled={isSaving}
+        type="submit"
+      >
+        {isSaving ? "Saving..." : "Save Form"}
+      </button>
+      {/* Popup for form link */}
+      {showPopup && (
+        <div className="popup">
+          <div className="popup-content">
+            {saveError ? 
+            <p>An error occurred while saving the form.</p> :
+            <>
+            <h2>Form Link</h2>
+            <p>Your form has been created successfully!</p>
+            <p>Link to your form: <a href={formLink} target="_blank" rel="noopener noreferrer">{formLink}</a></p>
+            </>}
+            <button onClick ={copyToClipboard} className="copy-icon">{copiedLink ? "Copied!" : "Copy Link"}</button>
+            <button onClick={closePopup}>Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

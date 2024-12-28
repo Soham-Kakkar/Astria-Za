@@ -65,8 +65,12 @@ p {
 }
 
 @media (max-width: 768px) {
+    .team-page {
+        width: 99vw;
+        padding: 10px;
+    }
     .team-section {
-        min-width: 200px;
+        min-width: 250px;
     }
     p {
         flex-direction: column;
