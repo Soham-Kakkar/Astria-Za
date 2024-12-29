@@ -11324,6 +11324,7 @@ class Mesh extends Object3D {
 
 		this.material = source.material;
 		this.geometry = source.geometry;
+		this.rotation = source.rotation;
 
 		return this;
 
@@ -12239,7 +12240,7 @@ class PerspectiveCamera extends Camera {
 
 		this.filmGauge = source.filmGauge;
 		this.filmOffset = source.filmOffset;
-
+		this.position = source.position;
 		return this;
 
 	}
