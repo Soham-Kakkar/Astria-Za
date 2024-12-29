@@ -4,7 +4,8 @@ import NavbarMobile from '../components/Navbar/NavbarMobile';
 import ThreeJSBackground from '../components/ThreeJSBackground/ThreeJSBackground';
 import SessionProvider from "../components/SessionProvider";
 import { getServerSession } from "next-auth";
-import EasterEggMagic from "@/components/EasterEggMagic"
+import DeveloperInfo from "@/components/DeveloperInfo";
+import EasterEggMagic from "@/components/EasterEggMagic";
 
 export const metadata = {
   title: "Astria-Za - IIT Jammu",
@@ -22,6 +23,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <NavbarMobile />
         <main>{children}</main>        
         <EasterEggMagic />
+        <DeveloperInfo />
       </SessionProvider>
       </body>
     </html>
