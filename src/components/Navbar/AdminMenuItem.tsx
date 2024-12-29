@@ -6,7 +6,7 @@ import admins from '@/app/api/admins.json';
 export default function AdminMenuItem() {
 
     const { data: session } = useSession();
-    const isAdmin = session?.user?.email && admins.admins.includes(session?.user?.email);
+    const isAdmin = session?.user?.email && admins.admins.some(adminEmail => adminEmail.toLowerCase() === session?.user?.email?.toLowerCase());//admins.admins.includes(session?.user?.email);
 
     if (isAdmin) {
         return (

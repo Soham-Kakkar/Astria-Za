@@ -15,7 +15,8 @@
             "typeOfEvent": "Host",
             "natureOfEvent": "Intra",
             "objective": "The Math Bowl is an exciting, fast-paced mathematical quiz competition that challenges participants' problem-solving and analytical skills. Teams of 2-3 undergraduate students from the same branch will compete in a time-bound quiz round featuring objective-type questions. If a tie occurs, a thrilling tie-breaker round will determine the winner. Participants must think quickly, work collaboratively, and bring their A-game to claim victory in this engaging competition. This event is designed to test not just your mathematical prowess but also your ability to perform under pressure.",
-            "description": "https://unstop.com/competitions/1319435/register"
+            "description": "description",
+            "link": "https://unstop.com/competitions/1319435/register"
         }
     ],
     "Astronomy Bowl" : [

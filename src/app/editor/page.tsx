@@ -10,7 +10,7 @@ import "@/components/easterEgg.css"; // Import your CSS file for the Easter egg 
 export default function EditorPage() {
   const { data: session } = useSession();
 
-  const isAdmin = session?.user?.email && admins.admins.includes(session?.user?.email);
+  const isAdmin = session?.user?.email && admins.admins.some(adminEmail => adminEmail.toLowerCase() === session?.user?.email?.toLowerCase());//includes(session?.user?.email);
 
   return isAdmin ? (
     <div className="form-builder-page">

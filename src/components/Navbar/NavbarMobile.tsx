@@ -14,7 +14,7 @@ export default function MobileNavbar() {
   };
 
   const { data: session } = useSession();
-  const isAdmin = session?.user?.email && admins.admins.includes(session?.user?.email);
+  const isAdmin = session?.user?.email && admins.admins.some(adminEmail => adminEmail.toLowerCase() === session?.user?.email?.toLowerCase());//admins.admins.includes(session?.user?.email);
   return (
     <nav className="navbar navbar-mobile" role='navbar'>
       <Link href='/'><div className="logo">ASTRIA-ZA</div></Link>
