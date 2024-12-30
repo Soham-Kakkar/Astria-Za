@@ -1,13 +1,10 @@
 {
-    "Senior Advisor": [
-        { "name": "Vedika Aggarwal", "id": "2022UCH0072", "image": "/resources/team/vedika.png" }
-    ],
     "Club Coordinator": [
         { "name": "Sunny Kumar", "id": "2023UCS0115", "image": "/resources/team/sunny.png" }
     ],
     "Event Management Team": [
-        { "name": "Shlok Tiwari", "id": "2023UCE0067", "image": "/resources/team/shlok.png" },
-        { "name": "Anirudh Garg", "id": "2023UCH0005", "image": "/resources/team/anirudh.png" }
+        { "name": "Shlok Tiwari (Head)", "id": "2023UCE0067", "image": "/resources/team/shlok.png" },
+        { "name": "Anirudh Garg (Co-Head)", "id": "2023UCH0005", "image": "/resources/team/anirudh.png" }
     ],
     "Sponsorship & Outreach Team": [
         { "name": "Yuvraj Singh", "id": "2023UEE0160", "image": "/resources/team/yuvraj.png" }
@@ -26,5 +23,8 @@
     ],
     "Design Team": [
         { "name": "Jay Mangal Pandey", "id": "2023UMA0216", "image": "/resources/team/jay.png" }
+    ],
+    "Senior Advisor": [
+        { "name": "Vedika Aggarwal", "id": "2022UCH0072", "image": "/resources/team/vedika.png" }
     ]
 }

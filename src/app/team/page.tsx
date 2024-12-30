@@ -12,20 +12,18 @@ export default function TeamPage() {
                     <div className="team-section" key={role}>
                         <h2>{role}</h2>
                         {members.map(member => (
-                            <p key={member.id}>
-                                <span>
-                                    {member.image && (
-                                        <Image
-                                            src={member.image}
-                                            alt={member.name}
-                                            width={30}
-                                            height={30}
-                                        />
-                                    )}
-                                    {member.name}
-                                </span>
+                            <div key={member.id} className="member-card">
+                                {member.image && (
+                                    <Image
+                                        src={member.image}
+                                        alt={member.name}
+                                        width={100} // Increased width
+                                        height={100} // Increased height
+                                    />
+                                )}
+                                <p>{member.name}</p> {/* Moved name below the image */}
                                 <span>{member.id}</span>
-                            </p>
+                            </div>
                         ))}
                     </div>
                 ))}

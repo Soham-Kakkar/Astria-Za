@@ -20,7 +20,7 @@ export default function MobileNavbar() {
       <Link href='/'><div className="logo">ASTRIA-ZA</div></Link>
       <div className="hamburger" onClick={toggleMenu}>☰</div> {/* Button to toggle menu */}
       <div className={`nav ${isOpen ? 'open' : ''}`}> {/* Add 'open' class based on state */}
-        <ul className="nav-links">
+        <ul className="nav-links" onClick={toggleMenu}>
           <li><Link  href="/" className="home">Home</Link></li>
           <li><Link href="/about"className="about">About</Link></li>
           <li><Link href="/team" className="team">Team</Link></li>

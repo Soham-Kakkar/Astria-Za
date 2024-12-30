@@ -37,6 +37,8 @@
     max-height: 100%;
     overflow-y: auto !important; /* Force vertical scrolling */
     overflow-x: hidden !important; /* Force horizontal scrolling off */
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .event-type {
@@ -136,7 +138,6 @@
         display: block;
         height: auto;
         max-height: 100%;
-        overflow-y: auto;
     }
     .event-section {
         margin-bottom: 1rem;

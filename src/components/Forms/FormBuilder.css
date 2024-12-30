@@ -2,7 +2,6 @@
     height: 100%;
     width: 85vw;
     font-family: 'Orbitron', sans-serif;
-    overflow-y: auto;
 }
 
 .form-builder {
@@ -160,7 +159,6 @@ input {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     max-height: 500px;
-    overflow-y: auto;
     text-align: left;
 }
 

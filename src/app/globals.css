@@ -1,13 +1,13 @@
 :root {
   --background-color: #000000;
-  --background-image: url('../components//ThreeJSBackground/bg-img.png');
+  --background-image: url('../components/ThreeJSBackground/bg-img.png');
   --foreground: #ffffff;
 }
 
 body, html {
   margin: 0;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -57,6 +57,7 @@ main {
   height: calc(100vh - 100px);
   text-align: center;
   padding: 20px;
+  overflow-y: auto;
 }
 
 nav.navbar-mobile {
