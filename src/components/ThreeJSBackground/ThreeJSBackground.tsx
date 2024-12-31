@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useRef } from 'react';
 import * as THREE from './THREE';
+import "./ThreeJSBackground.css"
 
 const ThreeBackground: React.FC = () => {
     const containerRef = useRef<HTMLDivElement | null>(null);
@@ -101,16 +102,6 @@ const ThreeBackground: React.FC = () => {
         <div
             ref={containerRef}
             className='background-container'
-            style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                overflow: 'hidden',
-                zIndex: -10,
-                backgroundImage: '../../public/resources/bg-img.png'
-            }}
         />
     );
 };

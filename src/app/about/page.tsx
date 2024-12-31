@@ -1,5 +1,11 @@
 import Image from "next/image";
 import './AboutPage.css';
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: "About - Astria-Za IIT Jammu",
+  description: "Astria-Za - IIT Jammu's Physics and Astronomy Club",
+}
 
 export default function AboutPage() {
     return (

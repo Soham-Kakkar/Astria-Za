@@ -1,28 +1,28 @@
 {
     "Club Coordinator": [
-        { "name": "Sunny Kumar", "id": "2023UCS0115", "image": "/resources/team/sunny.png" }
+        { "name": "Sunny Kumar", "id": "2023UCS0115", "image": "/resources/team/sunny.jpg" }
     ],
     "Event Management Team": [
-        { "name": "Shlok Tiwari (Head)", "id": "2023UCE0067", "image": "/resources/team/shlok.png" },
-        { "name": "Anirudh Garg (Co-Head)", "id": "2023UCH0005", "image": "/resources/team/anirudh.png" }
+        { "name": "Shlok Tiwari (Head)", "id": "2023UCE0067", "image": "/resources/team/shlok.jpg" },
+        { "name": "Anirudh Garg (Co-Head)", "id": "2023UCH0005", "image": "/resources/team/anirudh.jpg" }
     ],
     "Sponsorship & Outreach Team": [
-        { "name": "Yuvraj Singh", "id": "2023UEE0160", "image": "/resources/team/yuvraj.png" }
+        { "name": "Yuvraj Singh", "id": "2023UEE0160", "image": "/resources/team/yuvraj.jpg" }
     ],
     "Web Dev Team": [
-        { "name": "Sujal Kapoor", "id": "2023UEE0154", "image": "/resources/team/sujal.png" }
+        { "name": "Sujal Kapoor", "id": "2023UEE0154", "image": "/resources/team/sujal.jpg" }
     ],
     "Social Media Team": [
         { "name": "Sachin Kumar Sah", "id": "2023UMA0234", "image": "/resources/team/sachin.png" }
     ],
     "Brain Ticklers Team": [
-        { "name": "Arjun Verma", "id": "2023UMA0204", "image": "/resources/team/arjun.png" }
+        { "name": "Arjun Verma", "id": "2023UMA0204", "image": "/resources/team/arjun.jpg" }
     ],
     "Inventory Team": [
-        { "name": "Somil Pandita", "id": "2023UEE0153", "image": "/resources/team/somil.png" }
+        { "name": "Somil Pandita", "id": "2023UEE0153", "image": "/resources/team/somil.jpg" }
     ],
     "Design Team": [
-        { "name": "Jay Mangal Pandey", "id": "2023UMA0216", "image": "/resources/team/jay.png" }
+        { "name": "Jay Mangal Pandey", "id": "2023UMA0216", "image": "/resources/team/jay.jpg" }
     ],
     "Senior Advisor": [
         { "name": "Vedika Aggarwal", "id": "2022UCH0072", "image": "/resources/team/vedika.png" }

@@ -1,7 +1,14 @@
 // src/app/page.tsx
 import './HomePage.css';
 import Image from 'next/image'
-import titleImg from '../../public/resources/astriaza-nobg.png'
+import titleImg from '../../public/resources/astriaza-nobg.png';
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: "Astria-Za - IIT Jammu",
+  description: "Astria-Za - IIT Jammu's Physics and Astronomy Club",
+}
+ 
 
 export default function HomePage() {
     return (

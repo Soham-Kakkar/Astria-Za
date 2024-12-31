@@ -6,7 +6,7 @@ import SignInBtn from '../SignInBtn';
 export default function Navbar() {
 
   return (
-    <nav className="navbar navbar-pc" role='navbar'>
+    <nav className="navbar navbar-pc">
       <Link href='/'><div className="logo">ASTRIA-ZA</div></Link>
       <div className="nav">
         <ul className="nav-links">

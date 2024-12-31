@@ -2,6 +2,13 @@
 import './EventsPage.css';
 import eventData from './events.json';
 
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: "Events - Astria-Za",
+  description: "Events onducted by Astria-Za - IIT Jammu's Physics and Astronomy Club",
+}
+
 interface Event {
     eventName: string; 
     date: string; 
