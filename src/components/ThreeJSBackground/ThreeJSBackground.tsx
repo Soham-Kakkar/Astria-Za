@@ -33,7 +33,7 @@ const ThreeBackground: React.FC = () => {
         }
         // Create the scene, camera, and renderer
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100);
+        const camera = new THREE.PerspectiveCamera(90, window.innerWidth / window.innerHeight, 0.1, 100);
         const renderer = new THREE.WebGLRenderer({ alpha: true });
 
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -61,7 +61,7 @@ const ThreeBackground: React.FC = () => {
 
         // Animation loop
         const animate = () => {
-            sphere.rotation.y += 0.00075;
+            sphere.rotation.y += 0.00035;
             renderer.render(scene, camera);
             animationRef.current = requestAnimationFrame(animate);
         };

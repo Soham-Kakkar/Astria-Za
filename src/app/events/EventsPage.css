@@ -2,8 +2,6 @@
 .events-page {
     height: 100%;
     width: 80vw;
-    font-family: 'Orbitron', sans-serif;
-    border-radius: 8px;
     padding: 20px;
     letter-spacing: 0.1rem;
     line-height: 1.5rem;
@@ -24,19 +22,17 @@
 .events-container {
     display: flex;
     gap: 20px;
-    padding-bottom: 5rem;
-    max-height: calc(100% + 2.5rem);
+    margin-bottom: 5rem;
 }
 
 .event-section {
-    flex: 1;
     background-color: rgba(0, 0, 10, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 8px;
-    padding: 15px;
+    padding: 5%;
     max-height: 100%;
-    overflow-y: auto !important; /* Force vertical scrolling */
-    overflow-x: hidden !important; /* Force horizontal scrolling off */
+    overflow-y: auto; /* Force vertical scrolling */
+    overflow-x: hidden; /* Force horizontal scrolling off */
     /* display: flex;
     flex-direction: column; */
 }
@@ -54,9 +50,9 @@
 }
 
 .event-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
 }
 
 .event-date {
@@ -64,10 +60,14 @@
 }
 
 .event-card {
+    flex: 1 1 40%; /* Adjust width as needed */
+    max-width: 60vw; /* Set a max width for each section */
+    min-width: 350px;
     background-color: rgba(75, 75, 75, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     padding: 15px;
+    margin: 1rem;
     transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -113,18 +113,6 @@
 .event-description {
     color: rgba(255, 255, 255, 0.7);
     line-height: 1.6;
-}
-
-.link-button {
-    margin: 10px;
-    background-color: rgba(0, 123, 255, 0.7); /* Light blue background */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 15px; /* Padding for the button */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    font-size: 1rem; /* Font size */
 }
 
 /* Hover effect */

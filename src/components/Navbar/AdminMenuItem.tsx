@@ -13,7 +13,7 @@ export default function AdminMenuItem() {
             <>
                 <li><Link href="/editor" className="adminMenuItem">FormBuilder</Link></li>
                 <style>{`
-@media (max-width: 1210px) {
+@media (max-width: 1090px) {
     .hamburger {
         display: block; /* Show hamburger icon on mobile */
     }

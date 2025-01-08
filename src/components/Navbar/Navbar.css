@@ -80,13 +80,14 @@
 .hamburger {
     display: none;
     font-size: 30px;
+    margin: 15px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
 }
 
-@media (max-width: 995px) {
+@media (max-width: 850px) {
     .hamburger {
         display: block; /* Show hamburger icon on mobile */
     }
@@ -113,6 +114,10 @@
         flex-direction: column;
         align-items: start;
         margin-top: 1rem;
+    }
+
+    .nav-links a {
+        width: 100%;
     }
 
     .nav-links a::before {

@@ -26,5 +26,8 @@
     ],
     "Senior Advisor": [
         { "name": "Vedika Aggarwal", "id": "2022UCH0072", "image": "/resources/team/vedika.png" }
+    ],
+    "Web Admin": [
+        { "name": "Soham Kakkar", "id": "2024UEE0123", "image": "/resources/team/soham.jpg" }
     ]
 }

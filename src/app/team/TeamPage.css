@@ -4,12 +4,9 @@
 }
 
 .scrollable-container {
-    width: 100%;
     display: flex; /* Change to flexbox */
     flex-wrap: wrap; /* Allow wrapping */
     justify-content: center; /* Center items */
-    padding: 2.5%;
-    margin-bottom: 5rem;
 }
 
 .team-section {
