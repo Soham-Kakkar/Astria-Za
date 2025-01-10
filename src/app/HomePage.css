@@ -50,7 +50,9 @@
     white-space: wrap;
     padding-inline: 0.1rem;
     animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite 
+    blinkTextCursor 500ms steps(44) infinite;
+    display: flex;
+    justify-content: center;
 }
 
 .home-content p::after {
