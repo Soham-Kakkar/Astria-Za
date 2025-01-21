@@ -19,16 +19,16 @@ export default function FormPage() {
     const queryId = new URLSearchParams(window.location.search).get('id');
     if (queryId) {
       setId(queryId);
-      setTitle(queryId.slice(0, queryId.lastIndexOf('_')));
+      setTitle(queryId);
     }
     const fetchFormFields = async () => {
       try {
         const response = await fetch(`/api/viewform?id=${id}`, {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json"
-            },
-          });
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json"
+          },
+        });
         if (!response.ok) {
           throw new Error("Failed to fetch form fields");
         }
@@ -42,23 +42,26 @@ export default function FormPage() {
       }
     };
 
-    if(id) fetchFormFields();
+    if (id) fetchFormFields();
   }, [id, error]);
 
   if (loading) return <div>Loading...</div>
 
   return (isLoggedIn && id) ? (
     <div className="form-viewer-page">
-      <FormView title={title} preview={false} fields={formFields ? formFields : []} />
-      {!formFields && "Form Failed to Load"}
+      {!formFields ? "Oops! Form Failed to Load. Make sure the link is correct" : <FormView title={title} preview={false} fields={formFields ? formFields : []} />}
     </div>
   ) : (
     <>
       <div className="401-box" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-        <h1 className="401" style={{ paddingRight: '1rem' }}>401</h1>
-        <h2 className="401-text" style={{ paddingLeft: '1rem', letterSpacing: '0.15rem', borderLeft: '1px solid white' }}>
-          Oops! Make sure you're logged in and didn't play around with the link.
-        </h2>
+        {!isLoggedIn &&
+          <>
+            <h1 className="401" style={{ paddingRight: '1rem' }}>401</h1>
+            <h2 className="401-text" style={{ paddingLeft: '1rem', letterSpacing: '0.15rem', borderLeft: '1px solid white' }}>
+              Oops! Make sure you're logged in
+            </h2>
+          </>
+        }
       </div>
     </>
   );

@@ -4,12 +4,14 @@
   --background-color: #000000;
   --background-image: url('https://images.squarespace-cdn.com/content/v1/5a769958b0786976fb16bcf6/1542774883995-V3ULKOLM6NQ708E3I6YX/orion.png?format=2500ws');
   --foreground: #ffffff;
+  --light-background: rgba(0, 0, 2, 0.2); /* Consolidated background color */
+  --dark-background: rgba(0, 0, 10, 0.5); /* New variable for EventsPage */
+  --card-background: rgba(75, 75, 75, 0.2); /* Consolidated card background color */
 }
 
 body, html {
   margin: 0;
   height: 100%;
-  /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -19,10 +21,11 @@ body, html {
 body {
   color: var(--foreground);
   background-color: var(--background-color);
-  background-image: var(--background-image); /*Fallback image*/
+  background-image: var(--background-image);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;  font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+  background-repeat: no-repeat;  
+  font-family: 'Orbitron', Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -43,19 +46,32 @@ main {
   top: 80px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  justify-content: center;
+  align-items: center;
   height: calc(100vh - 80px);
   text-align: center;
   overflow-y: auto;
   overflow-x: hidden;
+  width: 100vw;
+}
+
+noscript {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #000;
+  z-index: 1e9;
+  text-align: center;
+  width: 100vw
 }
 
 nav.navbar-mobile {
   display: none;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1090px) {
   nav.navbar-mobile {
     display: flex;
   }

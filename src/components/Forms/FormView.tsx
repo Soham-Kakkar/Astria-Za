@@ -16,13 +16,37 @@ const FormView: React.FC<Props> = ({ title, fields, preview }) => {
   const [formValues, setFormValues] = useState<{ [key: string]: any }>({}); // State to hold field values
 
   const handleValueChange = (label: string, value: any) => {
+    const inputElements = document.querySelectorAll("input");
     setFormValues((prevValues) => ({
       ...prevValues,
-      [label]: value, // Update the value for the specific field
+      [label]: ` ${value}`, // Update the value for the specific field
     }));
+    inputElements.forEach((inputElement) => {
+      if (inputElement.value && inputElement.value.length > 0) {
+        inputElement?.classList.remove("highlight");
+      }
+    });
   };
 
   const handleSubmitForm = async () => {
+    let hasError = false;
+    const inputElements = document.querySelectorAll("input");
+    inputElements.forEach((inputElement) => {
+      if (!inputElement.value && inputElement.value.length == 0) {
+        inputElement?.classList.add("highlight");
+        hasError = true;
+        return;
+      }
+    });
+
+    if (hasError) {
+      console.log("Form has errors. Please fill in all fields.");
+      return;
+    }
+
+    // Proceed with form submission logic
+    console.log("Form submitted successfully:", formValues);
+
     SetIsSubmitting(true);
 
     try {
@@ -33,7 +57,7 @@ const FormView: React.FC<Props> = ({ title, fields, preview }) => {
         },
         body: JSON.stringify({
           formResponses: {
-            eventId: `${title}_${Date.now().toString()}`, // This is the form name
+            eventId: title, // This is the form name
             fields: formValues, // This should be the array of formatted fields
           },
         }),
@@ -47,8 +71,8 @@ const FormView: React.FC<Props> = ({ title, fields, preview }) => {
         console.error(result.error || "Failed to submit form.");
       }
     } catch (error) {
-        alert("An error occurred while submitting the form.");
-        console.error((error as Error).message);
+      alert("An error occurred while submitting the form.");
+      console.error((error as Error).message);
     } finally {
       SetIsSubmitting(false);
       SetIsSubmitted(true);
@@ -59,19 +83,21 @@ const FormView: React.FC<Props> = ({ title, fields, preview }) => {
       {preview && <h3>Form Preview</h3>}
       <div className="form-view">
         <h3>{title}</h3>
-        {fields.map((field) => (
-          <FieldRenderer key={field.id} field={field} preview={preview} onValueChange={handleValueChange}/>
-        ))}
-        {fields && fields.length > 0 &&
-          <button
-            type="submit"
-            {...preview && { disabled: true }}
-            {...isSubmitted && { disabled: true }}
-            onClick={handleSubmitForm}>{
-              (isSubmitting && !isSubmitted) && "Submitting..." ||
-              (!isSubmitting && !isSubmitted) && "Submit" ||
-              (!isSubmitting && isSubmitted) && "Submited"
-            }</button>}
+        <>
+          {fields.map((field) => (
+            <FieldRenderer key={field.id} field={field} preview={preview} onValueChange={handleValueChange} />
+          ))}
+          {fields && fields.length > 0 &&
+            <button
+              type="submit"
+              {...preview && { disabled: true }}
+              {...isSubmitted && { disabled: true }}
+              onClick={handleSubmitForm}>{
+                (isSubmitting && !isSubmitted) && "Submitting..." ||
+                (!isSubmitting && !isSubmitted) && "Submit" ||
+                (!isSubmitting && isSubmitted) && "Submited"
+              }</button>}
+        </>
       </div>
     </>
   )

@@ -46,7 +46,6 @@ const FormBuilder = () => {
         return fieldData; // Return the formatted field data
       });
 
-      const timestamp = Date.now().toString();
       const response = await fetch("/api/saveform", {
         method: "POST",
         headers: {
@@ -54,7 +53,7 @@ const FormBuilder = () => {
         },
         body: JSON.stringify({
           formData: {
-            eventId: `${formName}_${timestamp}`, // This is the form name
+            eventId: formName, // This is the form name
             fields: formattedFields, // This should be the array of formatted fields
           },
         }),
@@ -62,7 +61,7 @@ const FormBuilder = () => {
       const result = await response.json();
 
       if (response.ok) {
-        setFormLink(`${siteURL}/form?id=${formName}_${timestamp}`);
+        setFormLink(`${siteURL}/form?id=${formName}`);
       } else {
         setSaveError(true);
         console.error(result.error || "An error occurred while saving the form.");
