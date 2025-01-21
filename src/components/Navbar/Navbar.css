@@ -87,7 +87,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1090px) {
     .hamburger {
         display: block; /* Show hamburger icon on mobile */
     }

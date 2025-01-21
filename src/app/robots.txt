@@ -1,0 +1,6 @@
+# robots.txt for astriza website
+
+User-agent: *
+allow: /
+disallow: /form
+disallow: /editor

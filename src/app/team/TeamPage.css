@@ -1,6 +1,6 @@
 .team-page {
-    height: 100%;
-    width: 75vw;
+    min-height: 100%;
+    width: 100vw;
 }
 
 .scrollable-container {

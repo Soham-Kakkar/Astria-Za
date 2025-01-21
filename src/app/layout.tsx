@@ -17,6 +17,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   return (
     <html lang="en">
       <body>
+      <noscript>Enable JavaScript to use all features.</noscript>
       <SessionProvider session={session}>
         <ThreeJSBackground />
         <Navbar />

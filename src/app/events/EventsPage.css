@@ -1,6 +1,6 @@
 /* src/app/events/EventsPage.css */
 .events-page {
-    height: 100%;
+    min-height: 100%;
     width: 90vw;
     padding: 20px;
     letter-spacing: 0.1rem;
