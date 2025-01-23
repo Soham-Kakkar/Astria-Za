@@ -64,6 +64,7 @@
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 50px;
+    width: 10em;
 }
 
 .sign-in button:hover {
@@ -85,6 +86,17 @@
     border: none;
     color: white;
     cursor: pointer;
+}
+
+.shownprofile {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 2, 0.9);
+    padding: 20px;
+    margin: 5px;
 }
 
 @media (max-width: 1090px) {
@@ -138,6 +150,14 @@
     }
     .nav-links .formbuilder::before {
         content: '{} ';
+    }
+
+    .shownprofile {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
     }
 }
 

@@ -58,7 +58,7 @@ export default function FormPage() {
         {!isLoggedIn &&
           <>
             <h2 className="401-text" style={{ paddingLeft: '1rem', letterSpacing: '0.15rem' }}>
-              Oops! Sign in first to fill the form! <br /><br />
+              Oops! You'll need to sign in first to fill the form! <br /><br />
               <SignInBtn />
             </h2>
           </>
