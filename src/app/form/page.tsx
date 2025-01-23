@@ -5,6 +5,7 @@ import { useSession } from "next-auth/react";
 import FormView from "@/components/Forms/FormView";
 import "@/components/Forms/FormBuilder.css";
 import { FormField } from "@/components/Forms/types"
+import SignInBtn from "@/components/SignInBtn";
 
 export default function FormPage() {
   const { data: session } = useSession();
@@ -56,9 +57,9 @@ export default function FormPage() {
       <div className="401-box" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
         {!isLoggedIn &&
           <>
-            <h1 className="401" style={{ paddingRight: '1rem' }}>401</h1>
-            <h2 className="401-text" style={{ paddingLeft: '1rem', letterSpacing: '0.15rem', borderLeft: '1px solid white' }}>
-              Oops! Make sure you're logged in
+            <h2 className="401-text" style={{ paddingLeft: '1rem', letterSpacing: '0.15rem' }}>
+              Oops! Sign in first to fill the form! <br /><br />
+              <SignInBtn />
             </h2>
           </>
         }

@@ -58,7 +58,7 @@
     left: 0; /* Align to the left */
 }
 
-.sign-in button {
+.sign-in button, .sign-in-btn {
     border: none;
     font-family: 'Orbitron';
     padding: 10px 15px;

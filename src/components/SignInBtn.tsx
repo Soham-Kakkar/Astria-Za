@@ -35,7 +35,7 @@ export default function ProfileViewer() {
           )}
         </>
       ) : (
-        <button onClick={handleSignIn}>Sign In</button>
+        <button onClick={handleSignIn} className="sign-in-btn">Sign In</button>
       )}
     </>
   );

@@ -46,7 +46,7 @@
     ],
     "Water Rocket" : [
         {
-            "date": "2025-01-18",
+            "date": "2025-01-14",
             "typeOfEvent": "Host",
             "natureOfEvent": "Intra",
             "objective": "Join us for the Water Rocket event, where participants will design and launch their own water-powered rockets! Test your engineering skills and understanding of physics as you compete for the highest altitude. Experience the thrill of flight while learning about aerodynamics and propulsion in a fun and engaging environment!",
@@ -101,7 +101,7 @@
             "natureOfEvent": "Intra",
             "objective": "Participants will learn about the principles of aerodynamics and also construction and optimization of rockets for better stability and height, connecting the mechanics of propulsion to the technology used in real-life space exploration.",
             "description": "The event began with a hands-on session on origami, where participants explored the art of precision and creativity by folding intricate designs. Following this, a theory session on water rockets introduced participants to the principles of aerodynamics and propulsion, culminating in live demonstrations of rocket launches. The workshop blended creativity with science, inspiring curiosity and innovation among all who attended.",
-            "imageURL": "resources/events/water_rocket.png"
+            "imageURL": "resources/events/WaterRocketWorkshop.png"
         }
     ]
 }
