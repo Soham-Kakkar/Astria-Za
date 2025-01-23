@@ -160,7 +160,7 @@
 /* src/app/future-events/EventsPage.css */
 .future-event-section {
     max-width: 99vw;
-    margin: 2rem;
+    margin: 2rem 0 4rem; /* Increased bottom margin */
     padding-top: 1rem;
     border-radius: 8px;
     border: 1px solid #f0f0f0;
@@ -199,7 +199,7 @@
     /* Prfuture-event flex items from shrinking */
     min-width: 250px;
     /* Fixed width for each card */
-    width: 50%;
+    width: 85%;
     background-color: rgba(75, 75, 75, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
@@ -261,6 +261,11 @@
     /* Font size */
 }
 
+.event-img  {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .home-page {

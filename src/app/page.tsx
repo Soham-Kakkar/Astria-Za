@@ -54,11 +54,11 @@ export default function HomePage() {
                                 </span>
                             </div>
                             <div className="future-event-card-content">
-                                <p className="future-event-description">{futureEvent.objective}</p>
+                                <p className="future-event-description"><img src={`${process.env.NEXT_PUBLIC_SITE_NAME}/${futureEvent.imageURL}`} alt="event poster" className='event-img'/></p>
                             </div>
                             {futureEvent.link && (
                                 <a href={futureEvent.link} target="_blank" rel="noopener noreferrer" className="future-event-link">
-                                    <button className="link-button">View Event Link</button>
+                                    <button className="link-button">Register Now!</button>
                                 </a>
                             )}
                         </div>

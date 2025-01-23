@@ -37,7 +37,7 @@ export default function EventsPage() {
                             </span>
                         </div>
                         <div className="event-card-content">
-                            <p className="event-description">{event.description}</p>
+                        <p className="future-event-description"><img src={`${process.env.NEXT_PUBLIC_SITE_NAME}/${event.imageURL}`} alt="event poster" className='event-img'/></p>
                         </div>
                     </div>
                 ))}

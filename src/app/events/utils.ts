@@ -8,6 +8,7 @@ interface Event {
   natureOfEvent: string; 
   objective: string; 
   description: string;
+  imageURL?: string;
   link?: string;
 }
 

@@ -1,4 +1,15 @@
 {
+    "Harmony of Planets": [
+        {
+            "date": "2025-01-24",
+            "typeOfEvent": "Host",
+            "natureOfEvent": "Intra",
+            "objective": "Get ready for the astounding view of all planets lining up in the night sky!",
+            "description": "Get ready for the astounding view of all planets lining up in the night sky!",
+            "link": "https://astriaza-iitjammu.vercel.app/form?id=Harmony%20of%20Planets",
+            "imageURL": "resources/events/HarmonyOfPlanets.png"
+        }
+    ],
     "Physics Bowl" : [
         {
             "date": "2025-01-18",
@@ -15,7 +26,7 @@
             "typeOfEvent": "Host",
             "natureOfEvent": "Intra",
             "objective": "The Math Bowl is an exciting, fast-paced mathematical quiz competition that challenges participants' problem-solving and analytical skills. Teams of 2-3 undergraduate students from the same branch will compete in a time-bound quiz round featuring objective-type questions. If a tie occurs, a thrilling tie-breaker round will determine the winner. Participants must think quickly, work collaboratively, and bring their A-game to claim victory in this engaging competition. This event is designed to test not just your mathematical prowess but also your ability to perform under pressure.",
-            "description": "he Math Bowl is an exciting, fast-paced mathematical quiz competition that challenges participants' problem-solving and analytical skills. Teams of 2-3 undergraduate students from the same branch will compete in a time-bound quiz round featuring objective-type questions. If a tie occurs, a thrilling tie-breaker round will determine the winner. Participants must think quickly, work collaboratively, and bring their A-game to claim victory in this engaging competition. This event is designed to test not just your mathematical prowess but also your ability to perform under pressure.",
+            "description": "The Math Bowl is an exciting, fast-paced mathematical quiz competition that challenges participants' problem-solving and analytical skills. Teams of 2-3 undergraduate students from the same branch will compete in a time-bound quiz round featuring objective-type questions. If a tie occurs, a thrilling tie-breaker round will determine the winner. Participants must think quickly, work collaboratively, and bring their A-game to claim victory in this engaging competition. This event is designed to test not just your mathematical prowess but also your ability to perform under pressure.",
             "link": "https://unstop.com/competitions/1319435/register"
         }
     ],
