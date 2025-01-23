@@ -17,7 +17,9 @@
             "natureOfEvent": "Intra",
             "objective": "Prepare to unleash your inner physicist at the Physics Bowl, an electrifying inter-branch competition as part of Nexus'25! Dive into a thrilling series of mind-bending challenges that test your mastery of physics, from classical mechanics to modern breakthroughs. Represent your branch, showcase your problem-solving prowess, and demonstrate your command over the laws of the universe. It’s time to outthink, outcalculate, and outshine the competition in this dynamic clash of intellect and innovation. Let’s find out which branch will claim the title of ultimate physics champions!",
             "description": "Prepare to unleash your inner physicist at the Physics Bowl, an electrifying inter-branch competition as part of Nexus'25! Dive into a thrilling series of mind-bending challenges that test your mastery of physics, from classical mechanics to modern breakthroughs. Represent your branch, showcase your problem-solving prowess, and demonstrate your command over the laws of the universe. It’s time to outthink, outcalculate, and outshine the competition in this dynamic clash of intellect and innovation. Let’s find out which branch will claim the title of ultimate physics champions!",
-            "link": "https://unstop.com/competitions/1317828/register"
+            "link": "https://unstop.com/competitions/1317828/register",
+            "imageURL": "resources/events/PhysicsBowl.png"
+
         }
     ],
     "Maths Bowl" : [
@@ -27,7 +29,8 @@
             "natureOfEvent": "Intra",
             "objective": "The Math Bowl is an exciting, fast-paced mathematical quiz competition that challenges participants' problem-solving and analytical skills. Teams of 2-3 undergraduate students from the same branch will compete in a time-bound quiz round featuring objective-type questions. If a tie occurs, a thrilling tie-breaker round will determine the winner. Participants must think quickly, work collaboratively, and bring their A-game to claim victory in this engaging competition. This event is designed to test not just your mathematical prowess but also your ability to perform under pressure.",
             "description": "The Math Bowl is an exciting, fast-paced mathematical quiz competition that challenges participants' problem-solving and analytical skills. Teams of 2-3 undergraduate students from the same branch will compete in a time-bound quiz round featuring objective-type questions. If a tie occurs, a thrilling tie-breaker round will determine the winner. Participants must think quickly, work collaboratively, and bring their A-game to claim victory in this engaging competition. This event is designed to test not just your mathematical prowess but also your ability to perform under pressure.",
-            "link": "https://unstop.com/competitions/1319435/register"
+            "link": "https://unstop.com/competitions/1319435/register",
+            "imageURL": "resources/events/MathsBowl.png"
         }
     ],
     "Astronomy Bowl" : [
@@ -37,7 +40,8 @@
             "natureOfEvent": "Intra",
             "objective": "Gear up for the Astronomy Bowl, an exciting battle of wits, knowledge, and curiosity! This inter-branch competition, hosted as part of Nexus’25, challenges teams to showcase their astronomical expertise through multiple engaging rounds. Represent your branch, prove your cosmic intellect, and outshine the competition in this fun and friendly journey across the stars. Let’s see which branch reaches for the cosmos and claims the top spot!",
             "description": "Gear up for the Astronomy Bowl, an exciting battle of wits, knowledge, and curiosity! This inter-branch competition, hosted as part of Nexus’25, challenges teams to showcase their astronomical expertise through multiple engaging rounds. Represent your branch, prove your cosmic intellect, and outshine the competition in this fun and friendly journey across the stars. Let’s see which branch reaches for the cosmos and claims the top spot!",
-            "link": "https://unstop.com/competitions/1315665/register"
+            "link": "https://unstop.com/competitions/1315665/register",
+            "imageURL": "resources/events/AstronomyBowl.png"
         }
     ],
     "Water Rocket" : [
@@ -46,7 +50,8 @@
             "typeOfEvent": "Host",
             "natureOfEvent": "Intra",
             "objective": "Join us for the Water Rocket event, where participants will design and launch their own water-powered rockets! Test your engineering skills and understanding of physics as you compete for the highest altitude. Experience the thrill of flight while learning about aerodynamics and propulsion in a fun and engaging environment!",
-            "description": "Join us for the Water Rocket event, where participants will design and launch their own water-powered rockets! Test your engineering skills and understanding of physics as you compete for the highest altitude. Experience the thrill of flight while learning about aerodynamics and propulsion in a fun and engaging environment!"
+            "description": "Join us for the Water Rocket event, where participants will design and launch their own water-powered rockets! Test your engineering skills and understanding of physics as you compete for the highest altitude. Experience the thrill of flight while learning about aerodynamics and propulsion in a fun and engaging environment!",
+            "imageURL": "resources/events/water_rocket.png"
         }
     ],
     "National Space Day" : [
@@ -55,7 +60,8 @@
             "typeOfEvent": "Host",
             "natureOfEvent": "Intra",
             "objective": "The National Space Day event was organized by the Astronomy Club of IIT Jammu to celebrate India's remarkable achievement with Chandrayaan-2's historic lunar landing, inspiring interest in space science and exploration.",
-            "description": "The event featured a keynote talk by Dr. S. Pandian, (former Director of SDSC SHAR ISRO), who shared insights on India's space missions and future prospects. A quiz competition followed, engaging participants with questions on astronomy and space science, fostering curiosity and knowledge among students."
+            "description": "The event featured a keynote talk by Dr. S. Pandian, (former Director of SDSC SHAR ISRO), who shared insights on India's space missions and future prospects. A quiz competition followed, engaging participants with questions on astronomy and space science, fostering curiosity and knowledge among students.",
+            "imageURL": "resources/events/space_day.png"
         }
     ],
     "Star-gazing": [
@@ -64,7 +70,8 @@
             "typeOfEvent": "Host",
             "natureOfEvent": "Intra",
             "objective": "To offer students a captivating and educational stargazing experience with our telescope.",
-            "description": "The session involved a guided tour of the night sky using a telescope, where participants observed prominent celestial bodies such as the moon, stars, etc. Club members shared insights on star identification, telescope handling, and the science behind each observation, making it an enriching experience for both astronomy enthusiasts and newcomers."
+            "description": "The session involved a guided tour of the night sky using a telescope, where participants observed prominent celestial bodies such as the moon, stars, etc. Club members shared insights on star identification, telescope handling, and the science behind each observation, making it an enriching experience for both astronomy enthusiasts and newcomers.",
+            "imageURL": "resources/events/stargazing_event.png"
         }
     ],
     "Night of Planets (Saturn And Jupiter Sighting)": [
@@ -73,7 +80,8 @@
             "typeOfEvent": "Host",
             "natureOfEvent": "Intra",
             "objective": "To offer students an opportunity to observe and learn about specific planets and their unique features.",
-            "description": "The session offered a captivating stargazing experience, featuring the sighting of Jupiter and Saturn through telescopes. Participants enjoyed breathtaking views of these planets, deepening their interest in astronomy."
+            "description": "The session offered a captivating stargazing experience, featuring the sighting of Jupiter and Saturn through telescopes. Participants enjoyed breathtaking views of these planets, deepening their interest in astronomy.",
+            "imageURL": "resources/events/NightOfThePlanets.png"
         }
     ],
     "Movie Night": [
@@ -82,7 +90,8 @@
             "typeOfEvent": "Host",
             "natureOfEvent": "Intra",
             "objective": "To engage students in the exploration of astronomy through a captivating cinematic experience.",
-            "description": "The Movie Night featured the screening of the sci-fi masterpiece Prometheus, centered around themes of astronomy and humanity's quest for its origins among the stars. The film captivated the audience with its thrilling narrative and stunning visuals, sparking curiosity about space exploration and alien worlds, while offering an exciting blend of entertainment and scientific intrigue."
+            "description": "The Movie Night featured the screening of the sci-fi masterpiece Prometheus, centered around themes of astronomy and humanity's quest for its origins among the stars. The film captivated the audience with its thrilling narrative and stunning visuals, sparking curiosity about space exploration and alien worlds, while offering an exciting blend of entertainment and scientific intrigue.",
+            "imageURL": "resources/events/MovieNight.png"
         }
     ],
     "Water Rocket Workshop & Origami Demonstration": [
@@ -91,7 +100,8 @@
             "typeOfEvent": "Host",
             "natureOfEvent": "Intra",
             "objective": "Participants will learn about the principles of aerodynamics and also construction and optimization of rockets for better stability and height, connecting the mechanics of propulsion to the technology used in real-life space exploration.",
-            "description": "The event began with a hands-on session on origami, where participants explored the art of precision and creativity by folding intricate designs. Following this, a theory session on water rockets introduced participants to the principles of aerodynamics and propulsion, culminating in live demonstrations of rocket launches. The workshop blended creativity with science, inspiring curiosity and innovation among all who attended."
+            "description": "The event began with a hands-on session on origami, where participants explored the art of precision and creativity by folding intricate designs. Following this, a theory session on water rockets introduced participants to the principles of aerodynamics and propulsion, culminating in live demonstrations of rocket launches. The workshop blended creativity with science, inspiring curiosity and innovation among all who attended.",
+            "imageURL": "resources/events/water_rocket.png"
         }
     ]
 }

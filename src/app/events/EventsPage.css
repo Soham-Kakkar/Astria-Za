@@ -119,6 +119,12 @@
     background-color: rgba(0, 123, 255, 1); /* Darker blue on hover */
 }
 
+.event-img  {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .events-container {
