@@ -60,6 +60,7 @@ export default function HomePage() {
                     {upcomingEvents.length === 0 && <p>Waiting for the next event!</p>}
                 </div>
             </div>
+            <div style={{height: '0.1px'}} id="future-events"></div>
         </div>
     );
 }

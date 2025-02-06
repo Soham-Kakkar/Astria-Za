@@ -1,4 +1,5 @@
 .home-page {
+    min-height: 100%;
     width: 75vw;
 }
 
@@ -158,8 +159,8 @@
 
 /* src/app/future-events/EventsPage.css */
 .future-event-section {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
     margin: 2rem 0 4rem; /* Increased bottom margin */
     max-width: 99vw;
     padding-top: 1rem;
@@ -263,9 +264,9 @@
 }
 
 .event-img  {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    aspect-ratio: 1;
 }
 /* Responsive adjustments */
 @media (max-width: 768px) {

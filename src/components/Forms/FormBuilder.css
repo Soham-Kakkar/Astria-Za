@@ -160,6 +160,7 @@ input {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     text-align: left;
+    min-width: 25vw;
 }
 
 .form-question {
