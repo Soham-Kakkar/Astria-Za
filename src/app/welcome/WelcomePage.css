@@ -1,0 +1,47 @@
+.timer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: 100;
+}
+
+.timer-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 10px;
+  width: 40vw;
+  height: 40vw;
+  font-size: 30vw;
+  z-index: 1000;
+  color: white;
+}
+
+.timer-container {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: 100;
+}
+
+.timer-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid white;
+  padding: 10px;
+  width: 40vw;
+  height: 40vw;
+  font-size: 30vw;
+  z-index: 1000;
+  color: white;
+}

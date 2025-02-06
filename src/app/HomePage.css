@@ -1,5 +1,4 @@
 .home-page {
-    min-height: 100%;
     width: 75vw;
 }
 
@@ -159,8 +158,10 @@
 
 /* src/app/future-events/EventsPage.css */
 .future-event-section {
-    max-width: 99vw;
+    display: flex;
+    flex-direction: column;
     margin: 2rem 0 4rem; /* Increased bottom margin */
+    max-width: 99vw;
     padding-top: 1rem;
     border-radius: 8px;
     border: 1px solid #f0f0f0;

@@ -50,6 +50,7 @@
 
 .event-cards {
     display: flex;
+    align-content:flex-start;
     flex-wrap: wrap;
     justify-content: center; /* Center items */
 }
@@ -120,9 +121,9 @@
 }
 
 .event-img  {
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
-    height: auto;
+    aspect-ratio: 1;
 }
 
 /* Responsive adjustments */

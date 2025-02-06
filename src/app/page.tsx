@@ -4,12 +4,6 @@ import './HomePage.css';
 import Image from 'next/image'
 import titleImg from '../../public/resources/astronomy.jpg';
 import { upcomingEvents } from './events/utils'
-// import type { Metadata } from 'next'
-
-// export const metadata: Metadata = {
-//     title: "Astria-Za - IIT Jammu",
-//     description: "Astria-Za - IIT Jammu's Physics and Astronomy Club",
-// }
 
 import { useRef } from 'react';
 
