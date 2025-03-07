@@ -84,7 +84,7 @@ const FormView: React.FC<Props> = ({ title, fields, preview }) => {
       {preview && <h3>Form Preview</h3>}
       <div className="form-view">
         <h3>{title}</h3>
-        <>
+        <form action={handleSubmitForm}>
           {fields.map((field) => (
             <FieldRenderer key={field.id} field={field} preview={preview} onValueChange={handleValueChange} />
           ))}
@@ -93,12 +93,12 @@ const FormView: React.FC<Props> = ({ title, fields, preview }) => {
               type="submit"
               {...preview && { disabled: true }}
               {...isSubmitted && { disabled: true }}
-              onClick={handleSubmitForm}>{
+              >{
                 (isSubmitting && !isSubmitted) && "Submitting..." ||
                 (!isSubmitting && !isSubmitted) && "Submit" ||
                 (!isSubmitting && isSubmitted) && "Submited"
               }</button>}
-        </>
+        </form>
       </div>
       {(isSubmitted) && <div className="popup">
         <div className="popup-content">
@@ -106,7 +106,9 @@ const FormView: React.FC<Props> = ({ title, fields, preview }) => {
           <div className="success-tick">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g strokeWidth={0} /><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" /><g id="SVGRepo_iconCarrier"> <path d="M20 7L9.00004 18L3.99994 13" stroke="#ffffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /> </g></svg>
           </div>
-          <button>Go to home</button>
+          <a href={`${process.env.NEXT_PUBLIC_SITE_NAME}`}>
+            <button>Go to home</button>
+          </a>
         </div>
       </div>}
     </>
