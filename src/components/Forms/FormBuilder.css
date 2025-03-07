@@ -228,6 +228,7 @@ button[type="submit"] {
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    word-spacing: 0.2rem;
 }
 
 .popup-content h2 {
@@ -272,4 +273,23 @@ button[type="submit"] {
 .highlight {
     border: 2px solid red; /* Change the border color to red */
     background-color: rgba(255, 0, 0, 0.1); /* Light red background for visibility */
+}
+
+.success-tick {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0ad05f;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-block: 1.5rem;
+}
+
+.success-tick svg {
+    width: 2rem;
+    height: 2rem;
 }

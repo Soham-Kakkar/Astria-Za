@@ -78,6 +78,7 @@ const FormView: React.FC<Props> = ({ title, fields, preview }) => {
       SetIsSubmitted(true);
     }
   };
+
   return (
     <>
       {preview && <h3>Form Preview</h3>}
@@ -99,6 +100,15 @@ const FormView: React.FC<Props> = ({ title, fields, preview }) => {
               }</button>}
         </>
       </div>
+      {(isSubmitted) && <div className="popup">
+        <div className="popup-content">
+          <div>Form Submitted Successfully!</div>
+          <div className="success-tick">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g strokeWidth={0} /><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" /><g id="SVGRepo_iconCarrier"> <path d="M20 7L9.00004 18L3.99994 13" stroke="#ffffffff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /> </g></svg>
+          </div>
+          <button>Go to home</button>
+        </div>
+      </div>}
     </>
   )
 };

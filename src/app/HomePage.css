@@ -1,6 +1,6 @@
 .home-page {
     min-height: 100%;
-    width: 75vw;
+    width: 90vw;
 }
 
 .home-content {
@@ -182,24 +182,18 @@
 
 .future-event-cards {
     display: flex;
-    /* Change grid to flex for horizontal layout */
-    margin: 15px;
-    gap: 15px;
-    padding: 2rem;
-    overflow-x: auto;
-    /* Enable horizontal scrolling */
-    scroll-behavior: smooth;
-    /* Smooth scrolling */
-    padding-bottom: 20px;
-    /* Space for scrollbar */
-    scroll-snap-type: x mandatory;
-    /* Snap cards into place */
+    align-content:flex-start;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    margin-inline:1rem;
+    margin-block: 2rem;
+    gap: 20px;
 }
 
 .future-event-card {
-    flex: 0 0 auto;
-    /* Prfuture-event flex items from shrinking */
-    min-width: 250px;
+    flex: 1 1 30%; /* Adjust width as needed */
+    max-width: 30vw; /* Set a max width for each section */
+    min-width: 350px;
     /* Fixed width for each card */
     width: 85%;
     background-color: rgba(75, 75, 75, 0.2);
@@ -216,22 +210,24 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
+    padding-inline: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding-bottom: 10px;
 }
 
-.future-event-date {
+.future-event-name {
     color: white;
     font-weight: bold;
 }
 
-.future-event-tag {
+.future-event-date {
+    color: white;
+    text-align: end;
     background-color: rgba(0, 123, 255, 0.2);
     color: #007BFF;
     padding: 3px 8px;
     border-radius: 4px;
     font-size: 0.8rem;
-    text-transform: uppercase;
 }
 
 .future-event-card-content {
@@ -283,7 +279,6 @@
     .future-event-cards {
         width: 90%;
         padding: 0;
-        flex-direction: column;
     }
 
     .future-event-card {

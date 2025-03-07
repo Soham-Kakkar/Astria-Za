@@ -1,4 +1,15 @@
 {
+    "Luminous Ladies": [
+        {
+            "date": "2025-03-08",
+            "typeOfEvent": "Intra",
+            "natureOfEvent": "Intra",
+            "objective": "Celebrating Women's day",
+            "description": "We will celebrate women's day with a fun filled event.",
+            "link": "https://astriaza-iitjammu.vercel.app/form?id=Luminous%20Ladies%20(8%20March%202025)",
+            "imageURL": "resources/events/WomensDay2025.png"
+        }
+    ],
     "Movie Streaming": [
         {
         "date": "2025-02-07",

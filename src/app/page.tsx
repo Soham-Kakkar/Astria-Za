@@ -34,8 +34,10 @@ export default function HomePage() {
                             className="future-event-card"
                             data-future-event-type={futureEvent.typeOfEvent}
                         >
-                            <h3 className="future-event-name">{futureEvent.eventName}</h3>
+
                             <div className="future-event-card-header">
+                                <span className="future-event-name">{futureEvent.eventName}</span>
+
                                 <span className="future-event-date">
                                     {new Date(futureEvent.date).toLocaleDateString('en-US', {
                                         year: 'numeric',
@@ -43,12 +45,9 @@ export default function HomePage() {
                                         day: 'numeric'
                                     })}
                                 </span>
-                                <span className="future-event-tag">
-                                    {futureEvent.typeOfEvent}
-                                </span>
                             </div>
                             <div className="future-event-card-content">
-                                <p className="future-event-description"><img src={`${process.env.NEXT_PUBLIC_SITE_NAME}/${futureEvent.imageURL}`} alt="event poster" className='event-img'/></p>
+                                <p className="future-event-description"><img src={`${process.env.NEXT_PUBLIC_SITE_NAME}/${futureEvent.imageURL}`} alt="event poster" className='event-img' /></p>
                             </div>
                             {futureEvent.link && (
                                 <a href={futureEvent.link} target="_blank" rel="noopener noreferrer" className="future-event-link">
@@ -60,7 +59,7 @@ export default function HomePage() {
                     {upcomingEvents.length === 0 && <p>Waiting for the next event!</p>}
                 </div>
             </div>
-            <div style={{height: '0.1px'}} id="future-events"></div>
+            <div style={{ height: '0.1px' }} id="future-events"></div>
         </div>
     );
 }

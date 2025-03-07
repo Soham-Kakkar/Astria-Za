@@ -23,17 +23,14 @@ export default function EventsPage() {
                         className="event-card"
                         data-event-type={event.typeOfEvent}
                     >
-                        <h3 className="event-name">{event.eventName}</h3>
                         <div className="event-card-header">
+                            <span className="event-name">{event.eventName}</span>
                             <span className="event-date">
-                                {new Date(event.date).toLocaleDateString('en-US', {
+                                {new Date(event.date).toLocaleDateString('en-IN', {
                                     year: 'numeric',
-                                    month: 'long',
+                                    month: 'short',
                                     day: 'numeric'
                                 })}
-                            </span>
-                            <span className="event-tag">
-                                {event.typeOfEvent}
                             </span>
                         </div>
                         <div className="event-card-content">
