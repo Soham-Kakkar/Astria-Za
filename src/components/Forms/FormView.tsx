@@ -91,8 +91,7 @@ const FormView: React.FC<Props> = ({ title, fields, preview }) => {
           {fields && fields.length > 0 &&
             <button
               type="submit"
-              {...preview && { disabled: true }}
-              {...isSubmitted && { disabled: true }}
+              {...(preview || isSubmitted) && { disabled: true }}
               >{
                 (isSubmitting && !isSubmitted) && "Submitting..." ||
                 (!isSubmitting && !isSubmitted) && "Submit" ||

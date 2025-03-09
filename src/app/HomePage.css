@@ -259,6 +259,14 @@
     /* Font size */
 }
 
+.link-button:hover {
+    filter: brightness(0.9);
+}
+
+.link-button:active {
+    filter: brightness(0.8);
+}
+
 .event-img  {
     object-fit: cover;
     width: 100%;

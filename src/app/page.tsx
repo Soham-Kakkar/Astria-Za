@@ -3,13 +3,15 @@
 import './HomePage.css';
 import Image from 'next/image'
 import titleImg from '../../public/resources/astronomy.jpg';
-import { upcomingEvents } from './events/utils'
-
-import { useRef } from 'react';
-
+import { upcomingEvents } from './events/utils';
+import { useRef, useState } from 'react';
+import ConfirmationDialog from "../components/ConfirmPopup/ConfirmPopup";
 
 export default function HomePage() {
     const futureEventsContainerRef = useRef<HTMLDivElement>(null);
+
+    type ConfirmationDialogState = [string, boolean];
+    const [openConfirmationDialog, setOpenConfirmationDialog] = useState<ConfirmationDialogState>(["", false]);
 
     return (
         <div className="home-page">
@@ -49,11 +51,11 @@ export default function HomePage() {
                             <div className="future-event-card-content">
                                 <p className="future-event-description"><img src={`${process.env.NEXT_PUBLIC_SITE_NAME}/${futureEvent.imageURL}`} alt="event poster" className='event-img' /></p>
                             </div>
-                            {futureEvent.link && (
-                                <a href={futureEvent.link} target="_blank" rel="noopener noreferrer" className="future-event-link">
-                                    <button className="link-button">Register Now!</button>
-                                </a>
-                            )}
+                            <button
+                                className="link-button"
+                                onClick={() => setOpenConfirmationDialog([futureEvent.eventName, true])}>Register Now!
+                            </button>
+                            {openConfirmationDialog[1] && <ConfirmationDialog eventName={openConfirmationDialog[0]} setOpenConfirmationDialog={setOpenConfirmationDialog} />}
                         </div>
                     ))}
                     {upcomingEvents.length === 0 && <p>Waiting for the next event!</p>}
