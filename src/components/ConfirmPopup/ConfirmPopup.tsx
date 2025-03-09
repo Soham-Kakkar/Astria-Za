@@ -1,10 +1,11 @@
 import { useSession } from 'next-auth/react'
-import { useEffect, useState } from 'react';
+import { SetStateAction, useEffect, useState } from 'react';
 import SignInBtn from '@/components/SignInBtn';
 
+export type ConfirmationDialogState = [string, boolean];
 interface ConfirmationDialogProps {
   eventName: string;
-  setOpenConfirmationDialog: Function;
+  setOpenConfirmationDialog: SetStateAction<any>;
 }
 
 const ConfirmationDialog: React.FC<ConfirmationDialogProps> = ({ eventName, setOpenConfirmationDialog }) => {

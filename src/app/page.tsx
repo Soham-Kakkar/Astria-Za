@@ -5,12 +5,11 @@ import Image from 'next/image'
 import titleImg from '../../public/resources/astronomy.jpg';
 import { upcomingEvents } from './events/utils';
 import { useRef, useState } from 'react';
-import ConfirmationDialog from "../components/ConfirmPopup/ConfirmPopup";
+import ConfirmationDialog, { type ConfirmationDialogState } from "../components/ConfirmPopup/ConfirmPopup";
 
 export default function HomePage() {
     const futureEventsContainerRef = useRef<HTMLDivElement>(null);
 
-    type ConfirmationDialogState = [string, boolean];
     const [openConfirmationDialog, setOpenConfirmationDialog] = useState<ConfirmationDialogState>(["", false]);
 
     return (
