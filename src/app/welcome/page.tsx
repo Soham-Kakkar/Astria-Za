@@ -1,28 +1,55 @@
-"use client"
+"use client";
 import Confetti from "react-confetti";
 import { useState, useEffect } from "react";
 import HomePage from "../page";
 import "./WelcomePage.css"
 
 export default function WelcomePage() {
-  const [timeLeft, setTimeLeft] = useState(3);
+  const [timeLeft, setTimeLeft] = useState(5);
+  const [started, setStarted] = useState(false);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      if (timeLeft > 0) {
-        setTimeLeft(timeLeft - 1);
-      } else {
-        clearInterval(intervalId);
-      }
-    }, 1000);
-    return () => clearInterval(intervalId);
-  }, [timeLeft]);
+    if (started) {
+      setInterval(()=>{}, 1000);
+      const intervalId = setInterval(() => {
+        if (timeLeft > 0) {
+          setTimeLeft(timeLeft - 1);
+        } else {
+          clearInterval(intervalId);
+        }
+      }, 1000);
+      return () => clearInterval(intervalId);
+    }
+  }, [timeLeft, started]);
 
-  if (timeLeft !== 0) return (
+  const handleStart = () => {
+    setStarted(true);
+  }
+
+  if (timeLeft !== 0 && started) return (
     <div className="timer-container">
       <div className="timer-circle">{timeLeft}</div>
     </div>
   )
+  else if (!started) {
+    return (
+      <div className="timer-container">
+        <div className="timer-circle">
+          <button className="start-btn" onClick={handleStart}>
+          <div id="clip">
+          <div id="leftTop" className="corner" />
+          <div id="rightBottom" className="corner" />
+          <div id="rightTop" className="corner" />
+          <div id="leftBottom" className="corner" />
+        </div>
+        <span id="rightArrow" className="arrow" />
+        <span id="leftArrow" className="arrow" />
+          Reveal
+        </button>
+        </div>
+      </div>
+    )
+  }
   else {
     return (
       <>

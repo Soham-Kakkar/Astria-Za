@@ -22,8 +22,10 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <ThreeJSBackground />
         <Navbar />
         <NavbarMobile />
-        <main>{children}</main>        
-        <EasterEggMagic />
+        <main>
+          {children}
+          <EasterEggMagic />
+        </main>        
         <DeveloperInfo />
       </SessionProvider>
       </body>

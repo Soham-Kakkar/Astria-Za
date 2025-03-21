@@ -7,21 +7,6 @@
   z-index: 100;
 }
 
-.timer-circle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 2px solid white;
-  padding: 10px;
-  width: 40vw;
-  height: 40vw;
-  font-size: 30vw;
-  z-index: 1000;
-  color: white;
-}
-
 .timer-container {
   position: fixed;
   bottom: 0;
@@ -37,11 +22,82 @@
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 2px solid white;
+  border: 5px solid white;
   padding: 10px;
   width: 40vw;
   height: 40vw;
   font-size: 30vw;
   z-index: 1000;
   color: white;
+  text-shadow: 0 0 7px #17C3B2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px white;
+  animation: glow 20s infinite ease-in-out;
 }
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px;
+  }
+  50% {
+    box-shadow: 0 0 30px;
+  }
+  100% {
+    box-shadow: 0 0 20px;
+  }
+}
+
+.start-btn {
+  padding: 1em 3em;
+  border: 2px solid #17C3B2;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3vw;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #17C3B2;
+  border-radius: 10vw;
+  cursor: pointer;
+  box-shadow: 0 0 10px 2px #17C3B2;
+  animation: 5s glow-btn 3s infinite ease-in-out;
+ }
+
+ @keyframes glow-btn {
+  0% {
+    box-shadow: 0 0 10px 2px;
+  }
+  50% {
+    box-shadow: 0 0 20px 2px;
+  }
+  100% {
+    box-shadow: 0 0 10px 2px;
+  }
+}
+
+ .start-btn::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #0bbdac;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+
+ .start-btn:hover::before {
+  width: 105%;
+ }
+
+ .start-btn:hover {
+  color: #ffffff;
+ }
