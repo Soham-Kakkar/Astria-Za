@@ -23,7 +23,7 @@ export default function HomePage() {
                     priority
                     className='main-title-image' />
                 <h1>ASTRIA-ZA</h1>
-                <p className="subtitle">Physics And Astronomy Club - IIT Jammu</p>
+                <p className="subtitle">Astronomy Club - IIT Jammu</p>
             </div>
             {/* Upcoming Events Section */}
             <div className="future-event-section">
