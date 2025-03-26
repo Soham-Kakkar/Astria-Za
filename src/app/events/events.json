@@ -1,4 +1,26 @@
 {
+    "Pragyaan": [
+        {
+            "date": "2025-02-16",
+            "typeOfEvent": "Intra",
+            "natureOfEvent": "Intra",
+            "objective": "Showing Different things to school students",
+            "description": "We will demonstrate various things to school students",
+            "link": "",
+            "imageURL": "resources/events/Pragyaan2025.png"
+        }
+    ],
+    "Astrophotography": [
+        {
+            "date": "2025-02-16",
+            "typeOfEvent": "Intra",
+            "natureOfEvent": "Intra",
+            "objective": "Photographing astronomical entities",
+            "description": "We will capture images of celectial bodies",
+            "link": "",
+            "imageURL": "resources/events/AstrophotographyFeb2025.png"
+        }
+    ],
     "Luminous Ladies": [
         {
             "date": "2025-03-08",
@@ -78,7 +100,7 @@
     ],
     "National Space Day" : [
         {
-            "date": "2024-06-03",
+            "date": "2024-08-23",
             "typeOfEvent": "Host",
             "natureOfEvent": "Intra",
             "objective": "The National Space Day event was organized by the Astronomy Club of IIT Jammu to celebrate India's remarkable achievement with Chandrayaan-2's historic lunar landing, inspiring interest in space science and exploration.",
@@ -106,7 +128,7 @@
             "imageURL": "resources/events/NightOfThePlanets.png"
         }
     ],
-    "Movie Night": [
+    "A Secret Movie Night": [
         {
             "date": "2024-11-09",
             "typeOfEvent": "Host",

@@ -13,7 +13,7 @@ export default function EventsPage() {
     return (
         <div className="events-page">
             <div className="events-header">
-                <h1 className="events-title">Astria-Za Past Events</h1>
+                <h1 className="events-title">Past Events</h1>
             </div>
             {/* Past Events Section */}
             <div className="event-cards">
