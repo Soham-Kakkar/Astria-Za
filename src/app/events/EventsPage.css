@@ -64,7 +64,7 @@
 .event-card {
     flex: 1 1 30%; /* Adjust width as needed */
     max-width: 30vw; /* Set a max width for each section */
-    min-width: 400px;
+    min-width: 300px;
     background-color: rgba(75, 75, 75, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
@@ -113,6 +113,7 @@
 .event-img  {
     object-fit: cover;
     width: 100%;
+    height: auto;
     aspect-ratio: 1;
 }
 
