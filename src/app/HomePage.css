@@ -218,6 +218,7 @@
 .future-event-name {
     color: white;
     font-weight: bold;
+    margin-inline-end: 2rem;
 }
 
 .future-event-date {
@@ -292,5 +293,8 @@
 
     .future-event-card {
         width: 100%;
+    }
+    .event-name {
+        margin-inline-end: 0;
     }
 }

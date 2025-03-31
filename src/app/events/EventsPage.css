@@ -134,6 +134,9 @@
     .event-card-header {
         flex-direction: column;
     }
+    .event-name {
+        margin-inline-end: 0;
+    }
 }
 
 .event-add-button {
