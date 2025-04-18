@@ -5,9 +5,15 @@ import teamData from './team.json';
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: "Team - Astria-Za",
-  description: "the team of Astria-Za - IIT Jammu's Physics and Astronomy Club",
-}
+    title: 'Our Team',
+    description:
+      "Meet the core team behind Astria-Za, IIT Jammu's Astronomy Club — a collective of passionate students dedicated to expanding cosmic curiosity on campus and beyond.",
+    openGraph: {
+      description:
+        "Introducing the student leaders driving astronomical exploration at IIT Jammu.",
+      url: "https://astriaza-iitjammu.vercel.app/team",
+    },
+};
 
 export default function TeamPage() {
     return (

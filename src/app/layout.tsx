@@ -6,12 +6,27 @@ import SessionProvider from "../components/SessionProvider";
 import { getServerSession } from "next-auth";
 import DeveloperInfo from "@/components/DeveloperInfo";
 import EasterEggMagic from "@/components/EasterEggMagic";
+import type { Metadata } from 'next';
 
-export const metadata = {
-  title: "Astria-Za - IIT Jammu",
-  description: "Astria-Za - IIT Jammu's Physics and Astronomy Club",
+export const metadata: Metadata = {
+  metadataBase: new URL('https://astriaza-iitjammu.vercel.app'),
+  title: {
+    default: "Astria-Za - IIT Jammu's Astronomy Club",
+    template: '%s - Astria-Za'
+  },
+  description:
+    "Astria-Za is the official Astronomy Club of IIT Jammu, fostering curiosity and engagement with the cosmos through hands-on activities, stargazing sessions, and scientific outreach.",
+  openGraph: {
+    title: "Astria-Za - IIT Jammu's Astronomy Club",
+    description:
+      "Fostering cosmic curiosity through stargazing, outreach, and scientific exploration at IIT Jammu.",
+    url: "https://astriaza-iitjammu.vercel.app/",
+    siteName: "Astria-Za",
+    type: "website",
+    locale: "en_IN",
+    images: [{ url: "/resources/astriaza.jpeg" }]
+  },
 };
-
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const session = await getServerSession();
   return (

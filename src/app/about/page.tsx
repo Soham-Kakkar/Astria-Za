@@ -3,9 +3,17 @@ import './AboutPage.css';
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: "About - Astria-Za IIT Jammu",
-  description: "Astria-Za - IIT Jammu's Physics and Astronomy Club",
-}
+    title: "About Us",
+    description:
+      "Learn about Astria-Za, IIT Jammu's Astronomy Club — our mission, our journey, and how we inspire a passion for space and science through community-driven exploration.",
+    openGraph: {
+      title: "About Us - Astria-Za",
+      description:
+        "Get to know our vision, values, and the story behind IIT Jammu’s Astronomy Club.",
+      url: "https://astriaza-iitjammu.vercel.app/about",
+    },
+};
+  
 
 export default function AboutPage() {
     return (
@@ -17,7 +25,7 @@ export default function AboutPage() {
                     <div className="desc-img Astriaza">
                         <Image
                         src="/resources/astriaza-nobg.png"
-                        alt="FIC Image"
+                        alt="Astriaz-Za Logo"
                         height={200}
                         width={200} />
                     </div>

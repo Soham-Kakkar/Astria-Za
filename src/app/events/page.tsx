@@ -6,8 +6,13 @@ import Image from 'next/image';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: "Events - Astria-Za",
-    description: "Events conducted by Astria-Za - IIT Jammu's Physics and Astronomy Club",
+    title: "Past Events",
+    description: "Discover the events hosted by Astria-Za, IIT Jammu’s Astronomy Club — from expert talks to stargazing nights. Stay informed and inspired.",
+    openGraph: {
+        description:
+          "Discover the events hosted by Astria-Za, IIT Jammu’s Astronomy Club — from expert talks to stargazing nights. Stay informed and inspired.",
+        url: "https://astriaza-iitjammu.vercel.app/events",
+    },
 }
 
 export default function EventsPage() {
