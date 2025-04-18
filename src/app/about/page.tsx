@@ -7,7 +7,6 @@ export const metadata: Metadata = {
     description:
       "Learn about Astria-Za, IIT Jammu's Astronomy Club — our mission, our journey, and how we inspire a passion for space and science through community-driven exploration.",
     openGraph: {
-      title: "About Us - Astria-Za",
       description:
         "Get to know our vision, values, and the story behind IIT Jammu’s Astronomy Club.",
       url: "https://astriaza-iitjammu.vercel.app/about",
