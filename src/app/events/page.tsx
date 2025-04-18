@@ -3,7 +3,7 @@ import './EventsPage.css';
 import { pastEvents } from './utils'
 import Image from 'next/image';
 
-import type { Metadata } from 'next'
+import { Metadata } from 'next'
 
 export const metadata: Metadata = {
     title: "Past Events",

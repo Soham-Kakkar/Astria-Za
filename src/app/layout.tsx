@@ -6,7 +6,7 @@ import SessionProvider from "../components/SessionProvider";
 import { getServerSession } from "next-auth";
 import DeveloperInfo from "@/components/DeveloperInfo";
 import EasterEggMagic from "@/components/EasterEggMagic";
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://astriaza-iitjammu.vercel.app'),

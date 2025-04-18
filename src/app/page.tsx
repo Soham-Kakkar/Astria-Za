@@ -2,7 +2,7 @@
 import './HomePage.css';
 import Image from 'next/image'
 import titleImg from '../../public/resources/astronomy.jpg';
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 import FutureEvents from '@/components/FutureEvents';
 
 export const metadata: Metadata = {
