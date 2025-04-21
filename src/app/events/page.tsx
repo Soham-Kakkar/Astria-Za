@@ -27,7 +27,6 @@ export default function EventsPage() {
                     <div
                         key={index}
                         className="event-card"
-                        data-event-type={event.typeOfEvent}
                     >
                         <div className="event-card-header">
                             <span className="event-name">{event.eventName}</span>

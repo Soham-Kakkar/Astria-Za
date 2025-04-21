@@ -3,8 +3,7 @@ import eventData from './events.json';
 
 interface Event {
   eventName: string; 
-  date: string; 
-  typeOfEvent: string; 
+  date: string;
   natureOfEvent: string; 
   objective: string; 
   description: string;

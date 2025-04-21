@@ -10,6 +10,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://astriaza-iitjammu.vercel.app'),
+  applicationName: "Astria-Za",
   title: {
     default: "Astria-Za - IIT Jammu's Astronomy Club",
     template: '%s - Astria-Za'

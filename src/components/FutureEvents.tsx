@@ -21,7 +21,6 @@ export default function FutureEvents() {
             <div
                 key={index}
                 className="future-event-card"
-                data-future-event-type={futureEvent.typeOfEvent}
             >
 
                 <div className="future-event-card-header">
