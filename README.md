@@ -11,7 +11,11 @@ Astria-Za is the official website for the Physics and Astronomy Club of IIT Jamm
 
 ## Technologies Used
 - Next.js
-- Three.js
+- TypeScript
 - CSS
+- Google Apps Script (backend scripting; closed-source and handled separately)
 
-Thank you for visiting the Astria-Za website!
+
+## Live Site
+
+You can access the website here: [Astria-Za IIT Jammu Website](https://astriaza-iitjammu.vercel.app)
