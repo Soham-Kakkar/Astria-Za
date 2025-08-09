@@ -26,6 +26,12 @@
     transition: transform 0.3s; /* Animation for hover effect */
 }
 
+.team-card {
+    display: flex;
+    flex-wrap: wrap; /* allow multiple per row */
+    justify-content: center; /* center them */
+}
+
 .member-card {
     display: flex;
     flex-direction: column;
@@ -40,6 +46,7 @@
     border-radius: 50%;
     width: 20vmin;
     height: 20vmin;
+    aspect-ratio: 1;
 }
 
 .team-section:hover {

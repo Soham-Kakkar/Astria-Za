@@ -46,7 +46,7 @@ export default function AboutPage() {
                         height={200}
                         width={150} />
                     </div>
-                    <p>Our Faculty In-Charge, Dr. S. R. K. Chaitanya Indukuri provides guidance, support and mentorship 
+                    <p>Our Faculty In-Charge, Dr. Soumyadip Das provides guidance, support and mentorship 
                     to the Astria-Za club. With extensive experience in physics and 
                     astronomy, they play a crucial role in shaping the club's 
                     academic direction and fostering a passion for scientific exploration 
