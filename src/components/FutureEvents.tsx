@@ -2,7 +2,7 @@
 
 import { upcomingEvents } from "@/app/events/utils"
 // import ConfirmationDialog, { type ConfirmationDialogState } from "./ConfirmPopup/ConfirmPopup"
-import { useRef, useState } from 'react';
+import { useRef /*, useState*/ } from 'react';
 import Image from "next/image";
 
 export default function FutureEvents() {
