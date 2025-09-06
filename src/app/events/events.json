@@ -1,4 +1,23 @@
 {
+    "National Space Day 2025": [
+        {
+            "date": "2025-08-23",
+            "natureOfEvent": "Intra",
+            "objective": "The National Space Day event was organized by the Astronomy Club of IIT Jammu to celebrate India's remarkable achievement with Chandrayaan-2's historic lunar landing, inspiring interest in space science and exploration.",
+            "description": "The event featured a keynote talk by Dr. S. Pandian, (former Director of SDSC SHAR ISRO), who shared insights on India's space missions and future prospects. A quiz competition followed, engaging participants with questions on astronomy and space science, fostering curiosity and knowledge among students.",
+            "imageURL": "resources/events/National_Space_Day_2025.jpeg"
+        }
+    ],
+    "Blood Moon": [
+        {
+            "date": "2025-09-07",
+            "natureOfEvent": "Intra",
+            "objective": "Looking at the Blood Moon through our telescope",
+            "description": "We will look at the Blood Moon through our telescope",
+            "link": "https://astriaza-iitjammu.vercel.app/form?id=Blood%20Moon%20[7%20Sep%2725]",
+            "imageURL": "resources/events/Blood_Moon.jpeg"
+        }
+    ],
     "Mysteries Of the Cosmos": [
         {
             "date": "2025-04-04",
@@ -99,7 +118,7 @@
             "imageURL": "resources/events/water_rocket.png"
         }
     ],
-    "National Space Day" : [
+    "National Space Day 2024" : [
         {
             "date": "2024-08-23",
             "natureOfEvent": "Intra",
