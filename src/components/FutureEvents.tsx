@@ -9,7 +9,7 @@ export default function FutureEvents() {
 
     const futureEventsContainerRef = useRef<HTMLDivElement>(null);
 
-    const [openConfirmationDialog, setOpenConfirmationDialog] = useState<ConfirmationDialogState>(["", false]);
+    // const [openConfirmationDialog, setOpenConfirmationDialog] = useState<ConfirmationDialogState>(["", false]);
 
     return (
         <>
