@@ -1,41 +1,46 @@
 {
     "Coordinator": [
-        { "name": "Vaibhav Mittal", "id": "2024UEE0149", "image": "/resources/team/VAIBHAV MITTAL.jpg" }
+        
+        {"name": "Pranav Prabhat", "id": "2025uma0234","image": "/resources/team/PranavPrabhat.png"}
+        
     ],
     "Event Management": [
-        { "name": "Anmol Negi", "id": "2025PPH0013", "image": "/resources/team/ANMOL NEGI.jpg" },
-        { "name": "Shruti Embalwar", "id": "2024UME0271", "image": "/resources/team/EMBALWAR SHRUTI VENKATESH.jpg" },
-        { "name": "Harsh Kumar", "id": "2024UEE0139", "image": "/resources/team/HARSH KUMAR.jpg" },
-        { "name": "Hrishanya Singh Verma", "id": "2024UME0242", "image": "/resources/team/HRISHANYA SINGH VERMA.jpg" }
+        { "name": "Aarushi Sharma", "id": "2025uma0233", "image": "/resources/team/Aarushi Sharma.png" },
+        { "name": "Arnav Sohani", "id": "2025uma0227", "image": "/resources/team/Arnav Sohani.png" },
+        { "name": "Tejas Boyina", "id": "2025uma0220", "image": "/resources/team/Tejas Boyina.png" },
+        { "name": "Ansh Sharma", "id": "2025UBS0017", "image": "/resources/team/Ansh Sharma.png" }
     ],
-    "Inventory Management": [
-        { "name": "Anurag Srivastava", "id": "2024PPH0014", "image": "/resources/team/ANURAG SRIVASTAVA.jpg" },
-        { "name": "Shivangi Shukla", "id": "2025PSP0010", "image": "/resources/team/SHIVANGI SHUKLA.jpg" },
-        { "name": "Deekshitha Sarilla", "id": "2024UEE0141", "image": "/resources/team/SARILLA DEEKSHITHA.jpg" },
-        { "name": "Abbas Mehdi Khan", "id": "2024UMT0158", "image": "/resources/team/ABBAS MEHDI KHAN.jpg" }
+    "Telescope & Instrumentation Lead": [
+        { "name": "Nazar", "id": "2025uma0225", "image": "/resources/team/Nazar.png" },
+        { "name": "Vedant Lakade", "id": "2025uep0175", "image": "/resources/team/Vedant Lakade.png" },
+        { "name": "Arnav Choubey", "id": "2025ume0259", "image": "/resources/team/Arnav Choubey.png" },
+        { "name": "Smmayan Anand", "id": "2025ume0263", "image": "/resources/team/Smmayan Anand.png" }
     ],
-    "Brain Ticklers": [
-        { "name": "P Vardhan Reddy", "id": "2024UME0249", "image": "/resources/team/P VARDHAN REDDY.jpg" },
-        { "name": "Rahul Kumar", "id": "2024UMT0179", "image": "/resources/team/RAHUL KUMAR.jpg" }
+    "Astronomy Content": [
+        { "name": "Akhil Kumar", "id": "2026pph0018", "image": "/resources/team/Akhil Kumar.png" },
+        { "name": "Ankan Das", "id": "2026pph0019", "image": "/resources/team/Ankan Das.png" },
+        { "name": "Harshvardhan" , "id":"2026pph0024" , "image": "/resources/team/Harshvardhan.png"},
+        { "name": "Tanish Tyagi", "id": "2025ucs0087", "image": "/resources/team/Tanish Tyagi.png" }
     ],
     "Website": [
         { "name": "Soham Kakkar", "id": "2024UEE0123", "image": "/resources/team/SOHAM KAKKAR.jpg" },
-        { "name": "Govind Prajapat", "id": "2024UMA0208", "image": "/resources/team/GOVIND PRAJAPAT.jpg" }
+        { "name": "Hitesh Rathi", "id": "2025UMA0217", "image": "/resources/team/Hitesh Rathi.png" },
+        { "name": "Daiwik Rathor", "id":"2025uma0218", "image": "/resources/team/Daiwik Rathor.png"}
     ],
     "Sponsorship & Outreach": [
-        { "name": "Sidharth Gupta", "id": "2024UMA0228", "image": "/resources/team/SIDHARTH GUPTA.jpg" },
-        { "name": "Kovid Baid", "id": "2024UMA0214", "image": "/resources/team/KOVID BAID.jpg" }
+        { "name": "Daksh Tomar", "id": "2025uma0223", "image": "/resources/team/Daksh Tomar.png" },
+        { "name": "Sujal Suman", "id": "2025uee0141", "image": "/resources/team/Sujal Suman.png" }
     ],
     "Design": [
-        { "name": "Ram Krishan Kunal", "id": "2024UEE0128", "image": "/resources/team/RAM KRISHAN KUNAL.jpg" },
-        { "name": "Aryan Singh", "id": "2024UCH0009", "image": "/resources/team/ARYAN SINGH.jpg" }
+        { "name": "Manisha", "id": "2026pph0026", "image": "/resources/team/Manisha.png" },
+        { "name": "Sadegi Dubey", "id": "2026pph0027", "image": "/resources/team/Sadegi Dubey.png" }
     ],
     "Social Media & Coverage": [
-        { "name": "Aayush Kumar", "id": "2024UMT0157", "image": "/resources/team/AAYUSH KUMAR.jpg" },
-        { "name": "Banala Nakshatra", "id": "2024UCE0044", "image": "/resources/team/BANALA NAKSHATRA.jpg" }
+        { "name": "Pritish Srivastava", "id": "2025ucs0090", "image": "/resources/team/Pritish Srivastava.png" },
+        { "name": "Arpit Goyal", "id": "2025uma0221", "image": "/resources/team/Arpit Goyal.png" }
     ],
     "Senior Advisor": [
-        { "name": "Sunny Kumar", "id": "2023UCS0115", "image": "/resources/team/SUNNY.jpg" },
-        { "name": "Shlok Tiwari", "id": "2023UCE0067", "image": "/resources/team/SHLOK.jpg" }
+        { "name": "Pankaj Meghwal", "id": "2026RPH1057", "image": "/resources/team/Pankaj Meghwal.png" },
+        { "name": "Vaibhav Mittal", "id": "2024uee0149", "image": "/resources/team/Vaibhav Mittal.png" }
     ]
 }
